@@ -1,0 +1,1516 @@
+[
+  {
+    "id": "artPrint1",
+    "title": "Blue Floral Art Print",
+    "description": "A stunning floral art print in shades of blue and green.",
+    "category": "artPrints",
+    "price": 29.99,
+    "currency": "USD",
+    "quantity": 15,
+    "images": "image_url_1",
+    "seller": {
+      "name": "Artistic Creations",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Blue"
+      },
+      {
+        "name": "Material",
+        "value": "High-quality paper"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 6.99
+    }
+  },
+  {
+    "id": "artPrint2",
+    "title": "Abstract Geometric Print",
+    "description": "An abstract geometric art print with vibrant colors.",
+    "category": "artPrints",
+    "price": 35.99,
+    "currency": "USD",
+    "quantity": 12,
+    "images": "image_url_2",
+    "seller": {
+      "name": "Art Expressions",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Multicolor"
+      },
+      {
+        "name": "Material",
+        "value": "Canvas"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "3-5 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "artPrint3",
+    "title": "Vintage Floral Art Poster",
+    "description": "A vintage-style art poster featuring classic floral patterns.",
+    "category": "artPrints",
+    "price": 19.99,
+    "currency": "USD",
+    "quantity": 20,
+    "images": "image_url_3",
+    "seller": {
+      "name": "Artistic Visions",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Beige"
+      },
+      {
+        "name": "Material",
+        "value": "Paper"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 5.99
+    }
+  },
+  {
+    "id": "artPrint4",
+    "title": "Abstract Watercolor Artwork",
+    "description": "An abstract watercolor art piece that adds a modern touch to your space.",
+    "category": "artPrints",
+    "price": 27.99,
+    "currency": "USD",
+    "quantity": 18,
+    "images": "image_url_4",
+    "seller": {
+      "name": "Creative Artistry",
+      "rating": 4.6
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Aqua"
+      },
+      {
+        "name": "Material",
+        "value": "Canvas"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 6.99
+    }
+  },
+  {
+    "id": "artPrint5",
+    "title": "Nature-Inspired Art Print",
+    "description": "A nature-inspired art print featuring trees and birds in soothing colors.",
+    "category": "artPrints",
+    "price": 32.99,
+    "currency": "USD",
+    "quantity": 14,
+    "images": "image_url_5",
+    "seller": {
+      "name": "Nature's Palette",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Green"
+      },
+      {
+        "name": "Material",
+        "value": "Paper"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "3-5 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "artPrint6",
+    "title": "Modern Art Print Set",
+    "description": "A set of three modern art prints to adorn your walls with contemporary style.",
+    "category": "artPrints",
+    "price": 42.99,
+    "currency": "USD",
+    "quantity": 10,
+    "images": "image_url_6",
+    "seller": {
+      "name": "Modern Expressions",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Multicolor"
+      },
+      {
+        "name": "Material",
+        "value": "High-quality paper"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "3-6 weeks",
+      "shippingCost": 8.99
+    }
+  },
+  {
+    "id": "candlesSoaps1",
+    "title": "Lavender Scented Candle",
+    "description": "A relaxing lavender-scented candle to unwind after a long day.",
+    "category": "candlesSoaps",
+    "price": 12.99,
+    "currency": "USD",
+    "quantity": 25,
+    "images": "image_url_7",
+    "seller": {
+      "name": "Scented Delights",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Lavender"
+      },
+      {
+        "name": "Material",
+        "value": "Soy wax"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "1-2 weeks",
+      "shippingCost": 4.99
+    }
+  },
+  {
+    "id": "candlesSoaps2",
+    "title": "Handcrafted Soap Set",
+    "description": "A set of handcrafted, all-natural soaps for a luxurious bath experience.",
+    "category": "candlesSoaps",
+    "price": 15.99,
+    "currency": "USD",
+    "quantity": 20,
+    "images": "image_url_8",
+    "seller": {
+      "name": "Pure Elements",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Assorted"
+      },
+      {
+        "name": "Material",
+        "value": "Natural ingredients"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "1-2 weeks",
+      "shippingCost": 4.99
+    }
+  },
+  {
+    "id": "candlesSoaps3",
+    "title": "Beeswax Candles Set",
+    "description": "A set of natural beeswax candles for a warm and cozy ambiance.",
+    "category": "candlesSoaps",
+    "price": 17.99,
+    "currency": "USD",
+    "quantity": 18,
+    "images": "image_url_9",
+    "seller": {
+      "name": "Beehive Crafts",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Unscented"
+      },
+      {
+        "name": "Material",
+        "value": "Beeswax"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "1-3 weeks",
+      "shippingCost": 5.99
+    }
+  },
+  {
+    "id": "candlesSoaps4",
+    "title": "Exfoliating Bath Bombs",
+    "description": "A set of exfoliating bath bombs for a spa-like bath experience at home.",
+    "category": "candlesSoaps",
+    "price": 14.99,
+    "currency": "USD",
+    "quantity": 22,
+    "images": "image_url_10",
+    "seller": {
+      "name": "Bath Bliss",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Assorted"
+      },
+      {
+        "name": "Material",
+        "value": "Natural ingredients"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 6.99
+    }
+  },
+  {
+    "id": "candlesSoaps5",
+    "title": "Citrus Splash Candle",
+    "description": "A refreshing citrus-scented candle to brighten your space.",
+    "category": "candlesSoaps",
+    "price": 13.99,
+    "currency": "USD",
+    "quantity": 24,
+    "images": "image_url_11",
+    "seller": {
+      "name": "Citrus Aromas",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Citrus"
+      },
+      {
+        "name": "Material",
+        "value": "Soy wax"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "1-2 weeks",
+      "shippingCost": 4.99
+    }
+  },
+  {
+    "id": "candlesSoaps6",
+    "title": "Organic Lavender Soap",
+    "description": "A soothing organic lavender soap for a gentle and relaxing bath.",
+    "category": "candlesSoaps",
+    "price": 11.99,
+    "currency": "USD",
+    "quantity": 27,
+    "images": "image_url_12",
+    "seller": {
+      "name": "Organic Bliss",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Lavender"
+      },
+      {
+        "name": "Material",
+        "value": "Organic ingredients"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "1-2 weeks",
+      "shippingCost": 4.99
+    }
+  },
+  {
+    "id": "fashionAccessories1",
+    "title": "Silver Cuff Bracelet",
+    "description": "A stylish silver cuff bracelet to complement your outfits.",
+    "category": "fashionAccessories",
+    "price": 19.99,
+    "currency": "USD",
+    "quantity": 30,
+    "images": "image_url_13",
+    "seller": {
+      "name": "Chic Accessories",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Silver"
+      },
+      {
+        "name": "Material",
+        "value": "Metal"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "1-2 weeks",
+      "shippingCost": 4.99
+    }
+  },
+  {
+    "id": "fashionAccessories2",
+    "title": "Leather Tote Bag",
+    "description": "A trendy leather tote bag for your everyday style.",
+    "category": "fashionAccessories",
+    "price": 34.99,
+    "currency": "USD",
+    "quantity": 18,
+    "images": "image_url_14",
+    "seller": {
+      "name": "Urban Style Co.",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Black"
+      },
+      {
+        "name": "Material",
+        "value": "Genuine leather"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 6.99
+    }
+  },
+  {
+    "id": "fashionAccessories3",
+    "title": "Crystal Necklace",
+    "description": "A dazzling crystal necklace to add a touch of elegance to your look.",
+    "category": "fashionAccessories",
+    "price": 24.99,
+    "currency": "USD",
+    "quantity": 25,
+    "images": "image_url_15",
+    "seller": {
+      "name": "Crystal Elegance",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Clear"
+      },
+      {
+        "name": "Material",
+        "value": "Crystal"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "1-2 weeks",
+      "shippingCost": 4.99
+    }
+  },
+  {
+    "id": "fashionAccessories4",
+    "title": "Silk Scarf",
+    "description": "A luxurious silk scarf with a stunning print for a touch of glamour.",
+    "category": "fashionAccessories",
+    "price": 29.99,
+    "currency": "USD",
+    "quantity": 20,
+    "images": "image_url_16",
+    "seller": {
+      "name": "Silk Sensations",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Blue/Gold"
+      },
+      {
+        "name": "Material",
+        "value": "Silk"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "1-3 weeks",
+      "shippingCost": 5.99
+    }
+  },
+  {
+    "id": "fashionAccessories5",
+    "title": "Men's Leather Wallet",
+    "description": "A classic men's leather wallet with multiple compartments.",
+    "category": "fashionAccessories",
+    "price": 22.99,
+    "currency": "USD",
+    "quantity": 22,
+    "images": "image_url_17",
+    "seller": {
+      "name": "LeatherCrafters",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Brown"
+      },
+      {
+        "name": "Material",
+        "value": "Genuine leather"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 5.99
+    }
+  },
+  {
+    "id": "fashionAccessories6",
+    "title": "Statement Earrings",
+    "description": "A pair of statement earrings to elevate your fashion game.",
+    "category": "fashionAccessories",
+    "price": 16.99,
+    "currency": "USD",
+    "quantity": 28,
+    "images": "image_url_18",
+    "seller": {
+      "name": "Elegant Accents",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Gold"
+      },
+      {
+        "name": "Material",
+        "value": "Metal"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "1-2 weeks",
+      "shippingCost": 4.99
+    }
+  },
+
+  {
+    "id": "glasswork1",
+    "title": "Handblown Glass Vase",
+    "description": "A stunning handblown glass vase for your floral arrangements.",
+    "category": "glasswork",
+    "price": 39.99,
+    "currency": "USD",
+    "quantity": 15,
+    "images": "image_url_19",
+    "seller": {
+      "name": "Artistic Glassworks",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Aqua Blue"
+      },
+      {
+        "name": "Material",
+        "value": "Glass"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 8.99
+    }
+  },
+  {
+    "id": "glasswork2",
+    "title": "Stained Glass Window Panel",
+    "description": "A colorful stained glass window panel to enhance your home decor.",
+    "category": "glasswork",
+    "price": 54.99,
+    "currency": "USD",
+    "quantity": 12,
+    "images": "image_url_20",
+    "seller": {
+      "name": "GlassArt Creations",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Multicolor"
+      },
+      {
+        "name": "Material",
+        "value": "Stained glass"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "3-5 weeks",
+      "shippingCost": 9.99
+    }
+  },
+  {
+    "id": "glasswork3",
+    "title": "Glass Sculpture",
+    "description": "An exquisite glass sculpture that serves as a centerpiece for any room.",
+    "category": "glasswork",
+    "price": 49.99,
+    "currency": "USD",
+    "quantity": 14,
+    "images": "image_url_21",
+    "seller": {
+      "name": "Glass Masterpieces",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Clear"
+      },
+      {
+        "name": "Material",
+        "value": "Art glass"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 8.99
+    }
+  },
+  {
+    "id": "glasswork4",
+    "title": "Crystal Wine Glasses",
+    "description": "A set of elegant crystal wine glasses for special occasions.",
+    "category": "glasswork",
+    "price": 44.99,
+    "currency": "USD",
+    "quantity": 16,
+    "images": "image_url_22",
+    "seller": {
+      "name": "Crystal Elegance",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Clear"
+      },
+      {
+        "name": "Material",
+        "value": "Crystal"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "glasswork5",
+    "title": "Glass Mosaic Wall Art",
+    "description": "A captivating glass mosaic wall art to add a touch of artistry to your space.",
+    "category": "glasswork",
+    "price": 59.99,
+    "currency": "USD",
+    "quantity": 11,
+    "images": "image_url_23",
+    "seller": {
+      "name": "Mosaic Wonders",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Multicolor"
+      },
+      {
+        "name": "Material",
+        "value": "Glass tiles"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "3-5 weeks",
+      "shippingCost": 9.99
+    }
+  },
+  {
+    "id": "glasswork6",
+    "title": "Glass Flower Paperweight",
+    "description": "A delicate glass flower paperweight that adds beauty to your desk.",
+    "category": "glasswork",
+    "price": 19.99,
+    "currency": "USD",
+    "quantity": 22,
+    "images": "image_url_24",
+    "seller": {
+      "name": "Glass Blooms",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Pink"
+      },
+      {
+        "name": "Material",
+        "value": "Glass"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 8.99
+    }
+  },
+
+  {
+    "id": "homeDecor1",
+    "title": "Handwoven Wall Tapestry",
+    "description": "A beautiful handwoven wall tapestry to adorn your living space.",
+    "category": "homeDecor",
+    "price": 49.99,
+    "currency": "USD",
+    "quantity": 12,
+    "images": "image_url_25",
+    "seller": {
+      "name": "Artistic Weavings",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Multicolor"
+      },
+      {
+        "name": "Material",
+        "value": "Cotton"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 8.99
+    }
+  },
+  {
+    "id": "homeDecor2",
+    "title": "Decorative Throw Pillows",
+    "description": "A set of decorative throw pillows to add comfort and style to your sofa.",
+    "category": "homeDecor",
+    "price": 29.99,
+    "currency": "USD",
+    "quantity": 18,
+    "images": "image_url_26",
+    "seller": {
+      "name": "Pillow Artisans",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Blue/Green"
+      },
+      {
+        "name": "Material",
+        "value": "Cotton"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "homeDecor3",
+    "title": "Wooden Wall Clock",
+    "description": "A rustic wooden wall clock to enhance the charm of your home.",
+    "category": "homeDecor",
+    "price": 34.99,
+    "currency": "USD",
+    "quantity": 16,
+    "images": "image_url_27",
+    "seller": {
+      "name": "Timeless Treasures",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Natural Wood"
+      },
+      {
+        "name": "Material",
+        "value": "Wood"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 8.99
+    }
+  },
+  {
+    "id": "homeDecor4",
+    "title": "Ceramic Plant Pots",
+    "description": "A set of ceramic plant pots to showcase your favorite houseplants.",
+    "category": "homeDecor",
+    "price": 27.99,
+    "currency": "USD",
+    "quantity": 20,
+    "images": "image_url_28",
+    "seller": {
+      "name": "Artful Gardens",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Terracotta"
+      },
+      {
+        "name": "Material",
+        "value": "Ceramic"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "homeDecor5",
+    "title": "Modern Wall Art Prints",
+    "description": "A set of modern wall art prints to transform your walls into a gallery.",
+    "category": "homeDecor",
+    "price": 39.99,
+    "currency": "USD",
+    "quantity": 14,
+    "images": "image_url_29",
+    "seller": {
+      "name": "Artful Expressions",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Assorted"
+      },
+      {
+        "name": "Material",
+        "value": "Paper"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 8.99
+    }
+  },
+  {
+    "id": "homeDecor6",
+    "title": "Rattan Wall Mirror",
+    "description": "A stylish rattan wall mirror to add depth and elegance to your space.",
+    "category": "homeDecor",
+    "price": 42.99,
+    "currency": "USD",
+    "quantity": 13,
+    "images": "image_url_30",
+    "seller": {
+      "name": "Reflective Designs",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Natural Rattan"
+      },
+      {
+        "name": "Material",
+        "value": "Rattan"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 8.99
+    }
+  },
+  {
+    "id": "jewelryHandcraft1",
+    "title": "Handcrafted Silver Necklace",
+    "description": "A stunning handcrafted silver necklace with intricate details.",
+    "category": "jewelryHandcraft",
+    "price": 69.99,
+    "currency": "USD",
+    "quantity": 10,
+    "images": "image_url_31",
+    "seller": {
+      "name": "Artisan Creations",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Silver"
+      },
+      {
+        "name": "Material",
+        "value": "Silver"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "jewelryHandcraft2",
+    "title": "Gemstone Earrings",
+    "description": "Exquisite gemstone earrings handcrafted to perfection.",
+    "category": "jewelryHandcraft",
+    "price": 54.99,
+    "currency": "USD",
+    "quantity": 15,
+    "images": "image_url_32",
+    "seller": {
+      "name": "Gemstone Artistry",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Amethyst"
+      },
+      {
+        "name": "Material",
+        "value": "Gemstone"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 8.99
+    }
+  },
+  {
+    "id": "jewelryHandcraft3",
+    "title": "Leather and Brass Bracelet",
+    "description": "A stylish leather and brass bracelet handcrafted for a unique look.",
+    "category": "jewelryHandcraft",
+    "price": 44.99,
+    "currency": "USD",
+    "quantity": 12,
+    "images": "image_url_33",
+    "seller": {
+      "name": "Crafted Adornments",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Brown"
+      },
+      {
+        "name": "Material",
+        "value": "Leather, Brass"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "jewelryHandcraft4",
+    "title": "Enamel Flower Brooch",
+    "description": "A delicate enamel flower brooch handcrafted for a touch of elegance.",
+    "category": "jewelryHandcraft",
+    "price": 32.99,
+    "currency": "USD",
+    "quantity": 18,
+    "images": "image_url_34",
+    "seller": {
+      "name": "Enamel Delights",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Pink"
+      },
+      {
+        "name": "Material",
+        "value": "Enamel"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 8.99
+    }
+  },
+  {
+    "id": "jewelryHandcraft5",
+    "title": "Wood and Resin Pendant",
+    "description": "A unique wood and resin pendant handcrafted for a natural look.",
+    "category": "jewelryHandcraft",
+    "price": 49.99,
+    "currency": "USD",
+    "quantity": 14,
+    "images": "image_url_35",
+    "seller": {
+      "name": "Nature's Artisans",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Wooden"
+      },
+      {
+        "name": "Material",
+        "value": "Wood, Resin"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "jewelryHandcraft6",
+    "title": "Copper Wire Ring",
+    "description": "A handcrafted copper wire ring with a unique design.",
+    "category": "jewelryHandcraft",
+    "price": 19.99,
+    "currency": "USD",
+    "quantity": 20,
+    "images": "image_url_36",
+    "seller": {
+      "name": "Copper Creations",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Copper"
+      },
+      {
+        "name": "Material",
+        "value": "Copper"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "personalCareProducts1",
+    "title": "Handcrafted Lavender Soap",
+    "description": "Handcrafted lavender soap for a soothing and relaxing bath experience.",
+    "category": "personalCareProducts",
+    "price": 8.99,
+    "currency": "USD",
+    "quantity": 20,
+    "images": "image_url_37",
+    "seller": {
+      "name": "Nature's Touch",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Lavender"
+      },
+      {
+        "name": "Ingredients",
+        "value": "Coconut oil, Lavender extract"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 4.99
+    }
+  },
+  {
+    "id": "personalCareProducts2",
+    "title": "Organic Rosewater Toner",
+    "description": "Organic rosewater toner to refresh and hydrate your skin naturally.",
+    "category": "personalCareProducts",
+    "price": 12.99,
+    "currency": "USD",
+    "quantity": 15,
+    "images": "image_url_38",
+    "seller": {
+      "name": "Organic Beauty",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Rose"
+      },
+      {
+        "name": "Ingredients",
+        "value": "Organic rosewater"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 5.99
+    }
+  },
+  {
+    "id": "personalCareProducts3",
+    "title": "Handmade Shea Butter Lotion",
+    "description": "Handmade shea butter lotion for deep moisturization and soft skin.",
+    "category": "personalCareProducts",
+    "price": 14.99,
+    "currency": "USD",
+    "quantity": 18,
+    "images": "image_url_39",
+    "seller": {
+      "name": "Shea Beauty Essentials",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Unscented"
+      },
+      {
+        "name": "Ingredients",
+        "value": "Shea butter, Almond oil"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 5.99
+    }
+  },
+  {
+    "id": "personalCareProducts4",
+    "title": "Natural Hair Shampoo",
+    "description": "A natural hair shampoo with gentle cleansing and nourishing properties.",
+    "category": "personalCareProducts",
+    "price": 10.99,
+    "currency": "USD",
+    "quantity": 22,
+    "images": "image_url_40",
+    "seller": {
+      "name": "Naturally Clean",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Herbal"
+      },
+      {
+        "name": "Ingredients",
+        "value": "Aloe vera, Herbal extracts"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 4.99
+    }
+  },
+  {
+    "id": "personalCareProducts5",
+    "title": "Botanical Face Mask",
+    "description": "A botanical face mask infused with natural herbs for radiant skin.",
+    "category": "personalCareProducts",
+    "price": 9.99,
+    "currency": "USD",
+    "quantity": 19,
+    "images": "image_url_41",
+    "seller": {
+      "name": "Botanical Beauty",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Herbal"
+      },
+      {
+        "name": "Ingredients",
+        "value": "Herbal extracts, Clay"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 4.99
+    }
+  },
+  {
+    "id": "personalCareProducts6",
+    "title": "Natural Deodorant Stick",
+    "description": "A natural deodorant stick for long-lasting freshness without harsh chemicals.",
+    "category": "personalCareProducts",
+    "price": 7.99,
+    "currency": "USD",
+    "quantity": 21,
+    "images": "image_url_42",
+    "seller": {
+      "name": "Pure & Fresh",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Scent",
+        "value": "Unscented"
+      },
+      {
+        "name": "Ingredients",
+        "value": "Coconut oil, Baking soda"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 4.99
+    }
+  },
+  {
+    "id": "potteryCeramics1",
+    "title": "Handcrafted Ceramic Vase",
+    "description": "A beautifully handcrafted ceramic vase to display your favorite flowers.",
+    "category": "potteryCeramics",
+    "price": 39.99,
+    "currency": "USD",
+    "quantity": 10,
+    "images": "image_url_43",
+    "seller": {
+      "name": "Ceramic Creations",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "White"
+      },
+      {
+        "name": "Material",
+        "value": "Ceramic"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 6.99
+    }
+  },
+  {
+    "id": "potteryCeramics2",
+    "title": "Artistic Stoneware Bowl",
+    "description": "An artistic stoneware bowl for serving or decoration.",
+    "category": "potteryCeramics",
+    "price": 29.99,
+    "currency": "USD",
+    "quantity": 14,
+    "images": "image_url_44",
+    "seller": {
+      "name": "Stoneware Expressions",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Earthy Tones"
+      },
+      {
+        "name": "Material",
+        "value": "Stoneware"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "potteryCeramics3",
+    "title": "Handmade Ceramic Plates",
+    "description": "A set of handmade ceramic plates for your dining table.",
+    "category": "potteryCeramics",
+    "price": 34.99,
+    "currency": "USD",
+    "quantity": 12,
+    "images": "image_url_45",
+    "seller": {
+      "name": "Artistic Plates",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Blue"
+      },
+      {
+        "name": "Material",
+        "value": "Ceramic"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 6.99
+    }
+  },
+  {
+    "id": "potteryCeramics4",
+    "title": "Clay Teapot Set",
+    "description": "A clay teapot set with cups for a traditional tea experience.",
+    "category": "potteryCeramics",
+    "price": 49.99,
+    "currency": "USD",
+    "quantity": 16,
+    "images": "image_url_46",
+    "seller": {
+      "name": "Tea Lovers' Pottery",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Terracotta"
+      },
+      {
+        "name": "Material",
+        "value": "Clay"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "potteryCeramics5",
+    "title": "Ceramic Candle Holders",
+    "description": "A set of ceramic candle holders for creating a warm and cozy atmosphere.",
+    "category": "potteryCeramics",
+    "price": 24.99,
+    "currency": "USD",
+    "quantity": 18,
+    "images": "image_url_47",
+    "seller": {
+      "name": "Candlelight Ceramics",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Cream"
+      },
+      {
+        "name": "Material",
+        "value": "Ceramic"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 6.99
+    }
+  },
+  {
+    "id": "potteryCeramics6",
+    "title": "Raku Pottery Sculpture",
+    "description": "A unique Raku pottery sculpture for art lovers and collectors.",
+    "category": "potteryCeramics",
+    "price": 59.99,
+    "currency": "USD",
+    "quantity": 14,
+    "images": "image_url_48",
+    "seller": {
+      "name": "Raku Artistry",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Raku Finish"
+      },
+      {
+        "name": "Material",
+        "value": "Raku Clay"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 7.99
+    }
+  },
+  {
+    "id": "textiles1",
+    "title": "Handwoven Cotton Blanket",
+    "description": "A handwoven cotton blanket with intricate patterns for warmth and comfort.",
+    "category": "textiles",
+    "price": 49.99,
+    "currency": "USD",
+    "quantity": 10,
+    "images": "image_url_49",
+    "seller": {
+      "name": "Cotton Crafters",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Multicolor"
+      },
+      {
+        "name": "Material",
+        "value": "Cotton"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 6.99
+    }
+  },
+  {
+    "id": "textiles2",
+    "title": "Traditional Silk Scarf",
+    "description": "A traditional silk scarf with vibrant colors and intricate designs.",
+    "category": "textiles",
+    "price": 24.99,
+    "currency": "USD",
+    "quantity": 15,
+    "images": "image_url_50",
+    "seller": {
+      "name": "Silk Artisans",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Red & Gold"
+      },
+      {
+        "name": "Material",
+        "value": "Silk"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 5.99
+    }
+  },
+  {
+    "id": "textiles3",
+    "title": "Embroidered Table Runner",
+    "description": "An embroidered table runner with delicate patterns for a stylish dining table.",
+    "category": "textiles",
+    "price": 18.99,
+    "currency": "USD",
+    "quantity": 20,
+    "images": "image_url_51",
+    "seller": {
+      "name": "Embroidery Expressions",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Blue & White"
+      },
+      {
+        "name": "Material",
+        "value": "Cotton"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 5.99
+    }
+  },
+  {
+    "id": "textiles4",
+    "title": "Handmade Quilt Set",
+    "description": "A handmade quilt set with patchwork patterns for a cozy bedroom.",
+    "category": "textiles",
+    "price": 64.99,
+    "currency": "USD",
+    "quantity": 18,
+    "images": "image_url_52",
+    "seller": {
+      "name": "Quilt Craftsmen",
+      "rating": 4.8
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Patchwork"
+      },
+      {
+        "name": "Material",
+        "value": "Cotton"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-4 weeks",
+      "shippingCost": 6.99
+    }
+  },
+  {
+    "id": "textiles5",
+    "title": "Handcrafted Pillow Covers",
+    "description": "A set of handcrafted pillow covers with traditional motifs for home decor.",
+    "category": "textiles",
+    "price": 22.99,
+    "currency": "USD",
+    "quantity": 16,
+    "images": "image_url_53",
+    "seller": {
+      "name": "Decorative Textiles",
+      "rating": 4.9
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "Multicolor"
+      },
+      {
+        "name": "Material",
+        "value": "Cotton"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 5.99
+    }
+  },
+  {
+    "id": "textiles6",
+    "title": "Bamboo Fiber Towels",
+    "description": "Eco-friendly bamboo fiber towels for a sustainable and soft bathroom experience.",
+    "category": "textiles",
+    "price": 14.99,
+    "currency": "USD",
+    "quantity": 22,
+    "images": "image_url_54",
+    "seller": {
+      "name": "Bamboo Comfort",
+      "rating": 4.7
+    },
+    "attributes": [
+      {
+        "name": "Color",
+        "value": "White"
+      },
+      {
+        "name": "Material",
+        "value": "Bamboo Fiber"
+      }
+    ],
+    "shippingInfo": {
+      "deliveryTime": "2-3 weeks",
+      "shippingCost": 4.99
+    }
+  }
+]
