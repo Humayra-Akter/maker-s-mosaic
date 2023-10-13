@@ -1,15 +1,34 @@
 import React from "react";
 import avatar from "../../images/banner/avatar.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-secondary">
+    <div className="navbar bg-neutral">
       <div className="flex-1">
-        <a className="btn btn-ghost font-bold normal-case text-primary text-xl">
+        <Link
+          className="btn btn-ghost font-bold normal-case text-primary text-xl"
+          to="/"
+        >
           Maker's Mosaic
-        </a>
+        </Link>
       </div>
-
+      <div>
+        <Link
+          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+          to="/products"
+        >
+          PRODUCTS
+        </Link>
+      </div>
+      <div>
+        <Link
+          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+          to="/login"
+        >
+          LOGIN
+        </Link>
+      </div>
       <div>
         <div className="form-control">
           <input

@@ -5,6 +5,7 @@ import About from "../About/About";
 import Review from "./Review";
 import Faq from "./Faq";
 import ScrollToTop from "./ScrollToTop";
+import Footer from "../Shared/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Review />
       <Faq />
       <About />
+      <Footer />
     </div>
   );
 };
