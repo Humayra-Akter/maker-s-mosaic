@@ -74,8 +74,8 @@ const Signup = () => {
 
   return (
     <div className="bg-amber-50 pb-32 pt-12">
-      <div className="mx-auto max-w-2xl">
-        <div className="card bg-accent border-secondary border-2 shadow-xl">
+      <div className="mx-auto lg:max-w-2xl md:max-w-xl sm:max-w">
+        <div className="card lg:bg-accent lg:border-secondary lg:border-2 lg:shadow-xl">
           <div className="card-body">
             <h1
               style={{ fontFamily: "arial" }}

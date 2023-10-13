@@ -1,13 +1,13 @@
 [
   {
-    "id": "artPrint1",
+    "id": "1",
     "title": "Blue Floral Art Print",
     "description": "A stunning floral art print in shades of blue and green.",
-    "category": "artPrints",
+    "category": "Art Prints",
     "price": 29.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 15,
-    "images": "image_url_1",
+    "images": "../images/artPrints/1.jpg",
     "seller": {
       "name": "Artistic Creations",
       "rating": 4.9
@@ -28,14 +28,14 @@
     }
   },
   {
-    "id": "artPrint2",
+    "id": "2",
     "title": "Abstract Geometric Print",
     "description": "An abstract geometric art print with vibrant colors.",
-    "category": "artPrints",
+    "category": "Art Prints",
     "price": 35.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 12,
-    "images": "image_url_2",
+    "images": "../images/artPrints/2.jpg",
     "seller": {
       "name": "Art Expressions",
       "rating": 4.7
@@ -59,11 +59,11 @@
     "id": "artPrint3",
     "title": "Vintage Floral Art Poster",
     "description": "A vintage-style art poster featuring classic floral patterns.",
-    "category": "artPrints",
+    "category": "Art Prints",
     "price": 19.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 20,
-    "images": "image_url_3",
+    "images": "../images/artPrints/3.jpg",
     "seller": {
       "name": "Artistic Visions",
       "rating": 4.8
@@ -87,11 +87,11 @@
     "id": "artPrint4",
     "title": "Abstract Watercolor Artwork",
     "description": "An abstract watercolor art piece that adds a modern touch to your space.",
-    "category": "artPrints",
+    "category": "Art Prints",
     "price": 27.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 18,
-    "images": "image_url_4",
+    "images": "../images/artPrints/4.jpg",
     "seller": {
       "name": "Creative Artistry",
       "rating": 4.6
@@ -115,11 +115,11 @@
     "id": "artPrint5",
     "title": "Nature-Inspired Art Print",
     "description": "A nature-inspired art print featuring trees and birds in soothing colors.",
-    "category": "artPrints",
+    "category": "Art Prints",
     "price": 32.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 14,
-    "images": "image_url_5",
+    "images": "../images/artPrints/5.jpg",
     "seller": {
       "name": "Nature's Palette",
       "rating": 4.9
@@ -143,11 +143,11 @@
     "id": "artPrint6",
     "title": "Modern Art Print Set",
     "description": "A set of three modern art prints to adorn your walls with contemporary style.",
-    "category": "artPrints",
+    "category": "Art Prints",
     "price": 42.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 10,
-    "images": "image_url_6",
+    "images": "../images/artPrints/6.jpg",
     "seller": {
       "name": "Modern Expressions",
       "rating": 4.7
@@ -171,11 +171,11 @@
     "id": "candlesSoaps1",
     "title": "Lavender Scented Candle",
     "description": "A relaxing lavender-scented candle to unwind after a long day.",
-    "category": "candlesSoaps",
+    "category": "Candles & Soaps",
     "price": 12.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 25,
-    "images": "image_url_7",
+    "images": "../images/candlesSoaps/1.jpg",
     "seller": {
       "name": "Scented Delights",
       "rating": 4.9
@@ -199,11 +199,11 @@
     "id": "candlesSoaps2",
     "title": "Handcrafted Soap Set",
     "description": "A set of handcrafted, all-natural soaps for a luxurious bath experience.",
-    "category": "candlesSoaps",
+    "category": "Candles & Soaps",
     "price": 15.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 20,
-    "images": "image_url_8",
+    "images": "../images/candlesSoaps/2.jpg",
     "seller": {
       "name": "Pure Elements",
       "rating": 4.8
@@ -227,11 +227,11 @@
     "id": "candlesSoaps3",
     "title": "Beeswax Candles Set",
     "description": "A set of natural beeswax candles for a warm and cozy ambiance.",
-    "category": "candlesSoaps",
+    "category": "Candles & Soaps",
     "price": 17.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 18,
-    "images": "image_url_9",
+    "images": "../images/candlesSoaps/3.jpg",
     "seller": {
       "name": "Beehive Crafts",
       "rating": 4.7
@@ -255,11 +255,11 @@
     "id": "candlesSoaps4",
     "title": "Exfoliating Bath Bombs",
     "description": "A set of exfoliating bath bombs for a spa-like bath experience at home.",
-    "category": "candlesSoaps",
+    "category": "Candles & Soaps",
     "price": 14.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 22,
-    "images": "image_url_10",
+    "images": "../images/candlesSoaps/4.jpg",
     "seller": {
       "name": "Bath Bliss",
       "rating": 4.8
@@ -283,11 +283,11 @@
     "id": "candlesSoaps5",
     "title": "Citrus Splash Candle",
     "description": "A refreshing citrus-scented candle to brighten your space.",
-    "category": "candlesSoaps",
+    "category": "Candles & Soaps",
     "price": 13.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 24,
-    "images": "image_url_11",
+    "images": "../images/candlesSoaps/5.jpg",
     "seller": {
       "name": "Citrus Aromas",
       "rating": 4.9
@@ -311,11 +311,11 @@
     "id": "candlesSoaps6",
     "title": "Organic Lavender Soap",
     "description": "A soothing organic lavender soap for a gentle and relaxing bath.",
-    "category": "candlesSoaps",
+    "category": "Candles & Soaps",
     "price": 11.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 27,
-    "images": "image_url_12",
+    "images": "../images/candlesSoaps/6.jpg",
     "seller": {
       "name": "Organic Bliss",
       "rating": 4.7
@@ -339,11 +339,11 @@
     "id": "fashionAccessories1",
     "title": "Silver Cuff Bracelet",
     "description": "A stylish silver cuff bracelet to complement your outfits.",
-    "category": "fashionAccessories",
+    "category": "Fashion Accessories",
     "price": 19.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 30,
-    "images": "image_url_13",
+    "images": "../images/fashionAccessories/1.jpg",
     "seller": {
       "name": "Chic Accessories",
       "rating": 4.8
@@ -367,11 +367,11 @@
     "id": "fashionAccessories2",
     "title": "Leather Tote Bag",
     "description": "A trendy leather tote bag for your everyday style.",
-    "category": "fashionAccessories",
+    "category": "Fashion Accessories",
     "price": 34.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 18,
-    "images": "image_url_14",
+    "images": "../images/fashionAccessories/2.jpg",
     "seller": {
       "name": "Urban Style Co.",
       "rating": 4.7
@@ -395,11 +395,11 @@
     "id": "fashionAccessories3",
     "title": "Crystal Necklace",
     "description": "A dazzling crystal necklace to add a touch of elegance to your look.",
-    "category": "fashionAccessories",
+    "category": "Fashion Accessories",
     "price": 24.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 25,
-    "images": "image_url_15",
+    "images": "../images/fashionAccessories/3.jpg",
     "seller": {
       "name": "Crystal Elegance",
       "rating": 4.9
@@ -423,11 +423,11 @@
     "id": "fashionAccessories4",
     "title": "Silk Scarf",
     "description": "A luxurious silk scarf with a stunning print for a touch of glamour.",
-    "category": "fashionAccessories",
+    "category": "Fashion Accessories",
     "price": 29.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 20,
-    "images": "image_url_16",
+    "images": "../images/fashionAccessories/4.jpg",
     "seller": {
       "name": "Silk Sensations",
       "rating": 4.8
@@ -451,11 +451,11 @@
     "id": "fashionAccessories5",
     "title": "Men's Leather Wallet",
     "description": "A classic men's leather wallet with multiple compartments.",
-    "category": "fashionAccessories",
+    "category": "Fashion Accessories",
     "price": 22.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 22,
-    "images": "image_url_17",
+    "images": "../images/fashionAccessories/5.jpg",
     "seller": {
       "name": "LeatherCrafters",
       "rating": 4.7
@@ -479,11 +479,11 @@
     "id": "fashionAccessories6",
     "title": "Statement Earrings",
     "description": "A pair of statement earrings to elevate your fashion game.",
-    "category": "fashionAccessories",
+    "category": "Fashion Accessories",
     "price": 16.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 28,
-    "images": "image_url_18",
+    "images": "../images/fashionAccessories/6.jpg",
     "seller": {
       "name": "Elegant Accents",
       "rating": 4.8
@@ -508,11 +508,11 @@
     "id": "glasswork1",
     "title": "Handblown Glass Vase",
     "description": "A stunning handblown glass vase for your floral arrangements.",
-    "category": "glasswork",
+    "category": "Glasswork",
     "price": 39.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 15,
-    "images": "image_url_19",
+    "images": "../images/glasswork/1.jpg",
     "seller": {
       "name": "Artistic Glassworks",
       "rating": 4.9
@@ -536,11 +536,11 @@
     "id": "glasswork2",
     "title": "Stained Glass Window Panel",
     "description": "A colorful stained glass window panel to enhance your home decor.",
-    "category": "glasswork",
+    "category": "Glasswork",
     "price": 54.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 12,
-    "images": "image_url_20",
+    "images": "../images/glasswork/2.jpg",
     "seller": {
       "name": "GlassArt Creations",
       "rating": 4.7
@@ -564,11 +564,11 @@
     "id": "glasswork3",
     "title": "Glass Sculpture",
     "description": "An exquisite glass sculpture that serves as a centerpiece for any room.",
-    "category": "glasswork",
+    "category": "Glasswork",
     "price": 49.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 14,
-    "images": "image_url_21",
+    "images": "../images/glasswork/3.jpg",
     "seller": {
       "name": "Glass Masterpieces",
       "rating": 4.8
@@ -592,11 +592,11 @@
     "id": "glasswork4",
     "title": "Crystal Wine Glasses",
     "description": "A set of elegant crystal wine glasses for special occasions.",
-    "category": "glasswork",
+    "category": "Glasswork",
     "price": 44.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 16,
-    "images": "image_url_22",
+    "images": "../images/glasswork/4.jpg",
     "seller": {
       "name": "Crystal Elegance",
       "rating": 4.9
@@ -617,71 +617,14 @@
     }
   },
   {
-    "id": "glasswork5",
-    "title": "Glass Mosaic Wall Art",
-    "description": "A captivating glass mosaic wall art to add a touch of artistry to your space.",
-    "category": "glasswork",
-    "price": 59.99,
-    "currency": "USD",
-    "quantity": 11,
-    "images": "image_url_23",
-    "seller": {
-      "name": "Mosaic Wonders",
-      "rating": 4.8
-    },
-    "attributes": [
-      {
-        "name": "Color",
-        "value": "Multicolor"
-      },
-      {
-        "name": "Material",
-        "value": "Glass tiles"
-      }
-    ],
-    "shippingInfo": {
-      "deliveryTime": "3-5 weeks",
-      "shippingCost": 9.99
-    }
-  },
-  {
-    "id": "glasswork6",
-    "title": "Glass Flower Paperweight",
-    "description": "A delicate glass flower paperweight that adds beauty to your desk.",
-    "category": "glasswork",
-    "price": 19.99,
-    "currency": "USD",
-    "quantity": 22,
-    "images": "image_url_24",
-    "seller": {
-      "name": "Glass Blooms",
-      "rating": 4.7
-    },
-    "attributes": [
-      {
-        "name": "Color",
-        "value": "Pink"
-      },
-      {
-        "name": "Material",
-        "value": "Glass"
-      }
-    ],
-    "shippingInfo": {
-      "deliveryTime": "2-4 weeks",
-      "shippingCost": 8.99
-    }
-  },
-
-  {
     "id": "homeDecor1",
     "title": "Handwoven Wall Tapestry",
     "description": "A beautiful handwoven wall tapestry to adorn your living space.",
-    "category": "homeDecor",
+    "category": "Home Decor",
     "price": 49.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 12,
-    "images": "image_url_25",
+    "images": "../images/homeDecor/1.jpg",
     "seller": {
       "name": "Artistic Weavings",
       "rating": 4.9
@@ -705,11 +648,11 @@
     "id": "homeDecor2",
     "title": "Decorative Throw Pillows",
     "description": "A set of decorative throw pillows to add comfort and style to your sofa.",
-    "category": "homeDecor",
+    "category": "Home Decor",
     "price": 29.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 18,
-    "images": "image_url_26",
+    "images": "../images/homeDecor/2.jpg",
     "seller": {
       "name": "Pillow Artisans",
       "rating": 4.7
@@ -733,11 +676,11 @@
     "id": "homeDecor3",
     "title": "Wooden Wall Clock",
     "description": "A rustic wooden wall clock to enhance the charm of your home.",
-    "category": "homeDecor",
+    "category": "Home Decor",
     "price": 34.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 16,
-    "images": "image_url_27",
+    "images": "../images/homeDecor/3.jpg",
     "seller": {
       "name": "Timeless Treasures",
       "rating": 4.8
@@ -761,11 +704,11 @@
     "id": "homeDecor4",
     "title": "Ceramic Plant Pots",
     "description": "A set of ceramic plant pots to showcase your favorite houseplants.",
-    "category": "homeDecor",
+    "category": "Home Decor",
     "price": 27.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 20,
-    "images": "image_url_28",
+    "images": "../images/homeDecor/4.jpg",
     "seller": {
       "name": "Artful Gardens",
       "rating": 4.9
@@ -789,11 +732,11 @@
     "id": "homeDecor5",
     "title": "Modern Wall Art Prints",
     "description": "A set of modern wall art prints to transform your walls into a gallery.",
-    "category": "homeDecor",
+    "category": "Home Decor",
     "price": 39.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 14,
-    "images": "image_url_29",
+    "images": "../images/homeDecor/5.jpg",
     "seller": {
       "name": "Artful Expressions",
       "rating": 4.8
@@ -817,11 +760,11 @@
     "id": "homeDecor6",
     "title": "Rattan Wall Mirror",
     "description": "A stylish rattan wall mirror to add depth and elegance to your space.",
-    "category": "homeDecor",
+    "category": "Home Decor",
     "price": 42.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 13,
-    "images": "image_url_30",
+    "images": "../images/homeDecor/6.jpg",
     "seller": {
       "name": "Reflective Designs",
       "rating": 4.7
@@ -845,11 +788,11 @@
     "id": "jewelryHandcraft1",
     "title": "Handcrafted Silver Necklace",
     "description": "A stunning handcrafted silver necklace with intricate details.",
-    "category": "jewelryHandcraft",
+    "category": "Jewelry Handcraft",
     "price": 69.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 10,
-    "images": "image_url_31",
+    "images": "../images/jewelryHandcraft/1.jpg",
     "seller": {
       "name": "Artisan Creations",
       "rating": 4.9
@@ -873,11 +816,11 @@
     "id": "jewelryHandcraft2",
     "title": "Gemstone Earrings",
     "description": "Exquisite gemstone earrings handcrafted to perfection.",
-    "category": "jewelryHandcraft",
+    "category": "Jewelry Handcraft",
     "price": 54.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 15,
-    "images": "image_url_32",
+    "images": "../images/jewelryHandcraft/2.jpg",
     "seller": {
       "name": "Gemstone Artistry",
       "rating": 4.8
@@ -901,11 +844,11 @@
     "id": "jewelryHandcraft3",
     "title": "Leather and Brass Bracelet",
     "description": "A stylish leather and brass bracelet handcrafted for a unique look.",
-    "category": "jewelryHandcraft",
+    "category": "Jewelry Handcraft",
     "price": 44.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 12,
-    "images": "image_url_33",
+    "images": "../images/jewelryHandcraft/3.jpg",
     "seller": {
       "name": "Crafted Adornments",
       "rating": 4.7
@@ -929,11 +872,11 @@
     "id": "jewelryHandcraft4",
     "title": "Enamel Flower Brooch",
     "description": "A delicate enamel flower brooch handcrafted for a touch of elegance.",
-    "category": "jewelryHandcraft",
+    "category": "Jewelry Handcraft",
     "price": 32.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 18,
-    "images": "image_url_34",
+    "images": "../images/jewelryHandcraft/4.jpg",
     "seller": {
       "name": "Enamel Delights",
       "rating": 4.8
@@ -957,11 +900,11 @@
     "id": "jewelryHandcraft5",
     "title": "Wood and Resin Pendant",
     "description": "A unique wood and resin pendant handcrafted for a natural look.",
-    "category": "jewelryHandcraft",
+    "category": "Jewelry Handcraft",
     "price": 49.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 14,
-    "images": "image_url_35",
+    "images": "../images/jewelryHandcraft/5.jpg",
     "seller": {
       "name": "Nature's Artisans",
       "rating": 4.9
@@ -985,11 +928,11 @@
     "id": "jewelryHandcraft6",
     "title": "Copper Wire Ring",
     "description": "A handcrafted copper wire ring with a unique design.",
-    "category": "jewelryHandcraft",
+    "category": "Jewelry Handcraft",
     "price": 19.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 20,
-    "images": "image_url_36",
+    "images": "../images/jewelryHandcraft/6.jpg",
     "seller": {
       "name": "Copper Creations",
       "rating": 4.7
@@ -1013,11 +956,11 @@
     "id": "personalCareProducts1",
     "title": "Handcrafted Lavender Soap",
     "description": "Handcrafted lavender soap for a soothing and relaxing bath experience.",
-    "category": "personalCareProducts",
+    "category": "Personal Care Products",
     "price": 8.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 20,
-    "images": "image_url_37",
+    "images": "../images/personalCareProducts/1.jpg",
     "seller": {
       "name": "Nature's Touch",
       "rating": 4.8
@@ -1041,11 +984,11 @@
     "id": "personalCareProducts2",
     "title": "Organic Rosewater Toner",
     "description": "Organic rosewater toner to refresh and hydrate your skin naturally.",
-    "category": "personalCareProducts",
+    "category": "Personal Care Products",
     "price": 12.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 15,
-    "images": "image_url_38",
+    "images": "../images/personalCareProducts/2.jpg",
     "seller": {
       "name": "Organic Beauty",
       "rating": 4.9
@@ -1069,11 +1012,11 @@
     "id": "personalCareProducts3",
     "title": "Handmade Shea Butter Lotion",
     "description": "Handmade shea butter lotion for deep moisturization and soft skin.",
-    "category": "personalCareProducts",
+    "category": "Personal Care Products",
     "price": 14.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 18,
-    "images": "image_url_39",
+    "images": "../images/personalCareProducts/3.jpg",
     "seller": {
       "name": "Shea Beauty Essentials",
       "rating": 4.7
@@ -1097,11 +1040,11 @@
     "id": "personalCareProducts4",
     "title": "Natural Hair Shampoo",
     "description": "A natural hair shampoo with gentle cleansing and nourishing properties.",
-    "category": "personalCareProducts",
+    "category": "Personal Care Products",
     "price": 10.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 22,
-    "images": "image_url_40",
+    "images": "../images/personalCareProducts/4.jpg",
     "seller": {
       "name": "Naturally Clean",
       "rating": 4.8
@@ -1125,11 +1068,11 @@
     "id": "personalCareProducts5",
     "title": "Botanical Face Mask",
     "description": "A botanical face mask infused with natural herbs for radiant skin.",
-    "category": "personalCareProducts",
+    "category": "Personal Care Products",
     "price": 9.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 19,
-    "images": "image_url_41",
+    "images": "../images/personalCareProducts/5.jpg",
     "seller": {
       "name": "Botanical Beauty",
       "rating": 4.9
@@ -1150,42 +1093,14 @@
     }
   },
   {
-    "id": "personalCareProducts6",
-    "title": "Natural Deodorant Stick",
-    "description": "A natural deodorant stick for long-lasting freshness without harsh chemicals.",
-    "category": "personalCareProducts",
-    "price": 7.99,
-    "currency": "USD",
-    "quantity": 21,
-    "images": "image_url_42",
-    "seller": {
-      "name": "Pure & Fresh",
-      "rating": 4.7
-    },
-    "attributes": [
-      {
-        "name": "Scent",
-        "value": "Unscented"
-      },
-      {
-        "name": "Ingredients",
-        "value": "Coconut oil, Baking soda"
-      }
-    ],
-    "shippingInfo": {
-      "deliveryTime": "2-4 weeks",
-      "shippingCost": 4.99
-    }
-  },
-  {
     "id": "potteryCeramics1",
     "title": "Handcrafted Ceramic Vase",
     "description": "A beautifully handcrafted ceramic vase to display your favorite flowers.",
-    "category": "potteryCeramics",
+    "category": "Pottery Ceramics",
     "price": 39.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 10,
-    "images": "image_url_43",
+    "images": "../images/potteryCeramics/1.jpg",
     "seller": {
       "name": "Ceramic Creations",
       "rating": 4.8
@@ -1209,11 +1124,11 @@
     "id": "potteryCeramics2",
     "title": "Artistic Stoneware Bowl",
     "description": "An artistic stoneware bowl for serving or decoration.",
-    "category": "potteryCeramics",
+    "category": "Pottery Ceramics",
     "price": 29.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 14,
-    "images": "image_url_44",
+    "images": "../images/potteryCeramics/2.jpg",
     "seller": {
       "name": "Stoneware Expressions",
       "rating": 4.7
@@ -1237,11 +1152,11 @@
     "id": "potteryCeramics3",
     "title": "Handmade Ceramic Plates",
     "description": "A set of handmade ceramic plates for your dining table.",
-    "category": "potteryCeramics",
+    "category": "Pottery Ceramics",
     "price": 34.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 12,
-    "images": "image_url_45",
+    "images": "../images/potteryCeramics/3.jpg",
     "seller": {
       "name": "Artistic Plates",
       "rating": 4.9
@@ -1265,11 +1180,11 @@
     "id": "potteryCeramics4",
     "title": "Clay Teapot Set",
     "description": "A clay teapot set with cups for a traditional tea experience.",
-    "category": "potteryCeramics",
+    "category": "Pottery Ceramics",
     "price": 49.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 16,
-    "images": "image_url_46",
+    "images": "../images/potteryCeramics/4.jpg",
     "seller": {
       "name": "Tea Lovers' Pottery",
       "rating": 4.8
@@ -1293,11 +1208,11 @@
     "id": "potteryCeramics5",
     "title": "Ceramic Candle Holders",
     "description": "A set of ceramic candle holders for creating a warm and cozy atmosphere.",
-    "category": "potteryCeramics",
+    "category": "Pottery Ceramics",
     "price": 24.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 18,
-    "images": "image_url_47",
+    "images": "../images/potteryCeramics/5.jpg",
     "seller": {
       "name": "Candlelight Ceramics",
       "rating": 4.7
@@ -1321,11 +1236,11 @@
     "id": "potteryCeramics6",
     "title": "Raku Pottery Sculpture",
     "description": "A unique Raku pottery sculpture for art lovers and collectors.",
-    "category": "potteryCeramics",
+    "category": "Pottery Ceramics",
     "price": 59.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 14,
-    "images": "image_url_48",
+    "images": "../images/potteryCeramics/6.jpg",
     "seller": {
       "name": "Raku Artistry",
       "rating": 4.9
@@ -1349,11 +1264,11 @@
     "id": "textiles1",
     "title": "Handwoven Cotton Blanket",
     "description": "A handwoven cotton blanket with intricate patterns for warmth and comfort.",
-    "category": "textiles",
+    "category": "Textiles",
     "price": 49.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 10,
-    "images": "image_url_49",
+    "images": "../images/textiles/1.jpg",
     "seller": {
       "name": "Cotton Crafters",
       "rating": 4.8
@@ -1377,11 +1292,11 @@
     "id": "textiles2",
     "title": "Traditional Silk Scarf",
     "description": "A traditional silk scarf with vibrant colors and intricate designs.",
-    "category": "textiles",
+    "category": "Textiles",
     "price": 24.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 15,
-    "images": "image_url_50",
+    "images": "../images/textiles/2.jpg",
     "seller": {
       "name": "Silk Artisans",
       "rating": 4.9
@@ -1405,11 +1320,11 @@
     "id": "textiles3",
     "title": "Embroidered Table Runner",
     "description": "An embroidered table runner with delicate patterns for a stylish dining table.",
-    "category": "textiles",
+    "category": "Textiles",
     "price": 18.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 20,
-    "images": "image_url_51",
+    "images": "../images/textiles/3.jpg",
     "seller": {
       "name": "Embroidery Expressions",
       "rating": 4.7
@@ -1433,11 +1348,11 @@
     "id": "textiles4",
     "title": "Handmade Quilt Set",
     "description": "A handmade quilt set with patchwork patterns for a cozy bedroom.",
-    "category": "textiles",
+    "category": "Textiles",
     "price": 64.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 18,
-    "images": "image_url_52",
+    "images": "../images/textiles/4.jpg",
     "seller": {
       "name": "Quilt Craftsmen",
       "rating": 4.8
@@ -1461,11 +1376,11 @@
     "id": "textiles5",
     "title": "Handcrafted Pillow Covers",
     "description": "A set of handcrafted pillow covers with traditional motifs for home decor.",
-    "category": "textiles",
+    "category": "Textiles",
     "price": 22.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 16,
-    "images": "image_url_53",
+    "images": "../images/textiles/5.jpg",
     "seller": {
       "name": "Decorative Textiles",
       "rating": 4.9
@@ -1489,11 +1404,11 @@
     "id": "textiles6",
     "title": "Bamboo Fiber Towels",
     "description": "Eco-friendly bamboo fiber towels for a sustainable and soft bathroom experience.",
-    "category": "textiles",
+    "category": "Textiles",
     "price": 14.99,
-    "currency": "USD",
+    "currency": "BDT",
     "quantity": 22,
-    "images": "image_url_54",
+    "images": "../images/textiles/6.jpg",
     "seller": {
       "name": "Bamboo Comfort",
       "rating": 4.7
