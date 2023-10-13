@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 const Products = () => {
   const [products, setProducts] = useState([]);
   const category = useSelector((state) => state.category.category);
-
+  const search = useSelector((state) => state.search.search);
   useEffect(() => {
     fetch("service.json")
       .then((res) => res.json())
@@ -25,13 +25,17 @@ const Products = () => {
         Your Home's Best Friend
       </h1>
       <CategoryMenu />
+
       <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 p-11">
         {products
           .filter((product) => {
             if (category === "All") {
-              return product.title;
+              return product.title.toLowerCase().includes(search.toLowerCase());
             } else {
-              return category === product.category && product.title;
+              return (
+                category === product.category &&
+                product.title.toLowerCase().includes(search.toLowerCase())
+              );
             }
           })
           .map((product) => (

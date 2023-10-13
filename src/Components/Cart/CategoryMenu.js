@@ -14,7 +14,7 @@ const CategoryMenu = () => {
           ...new Set(data.map((product) => product.category)),
         ];
         setCategories(uniqueCategories);
-        console.log(uniqueCategories);
+        // console.log(uniqueCategories);
       });
   }, []);
   const selectedCategory = useSelector((state) => state.category.category);
@@ -30,20 +30,22 @@ const CategoryMenu = () => {
         >
           All
         </button>
-        {categories.map((category, index) => {
-          return (
-            <button
-              onClick={() => dispatch(setCategory(category))}
-              key={index}
-              className={`px-4 btn-sm mt-3 hover:scale-95 bg-primary text-accent font-bold rounded-full hover:bg-opacity-80 transition duration-300 ${
-                selectedCategory === category &&
-                "px-4 btn-sm mt-3 bg-secondary text-black font-bold rounded-full hover:bg-opacity-80 transition duration-300"
-              } `}
-            >
-              {category}
-            </button>
-          );
-        })}
+        <div className="md:grid-cols-2 sm:grid-cols-1 gap-5 ">
+          {categories.map((category, index) => {
+            return (
+              <button
+                onClick={() => dispatch(setCategory(category))}
+                key={index}
+                className={`px-4 mx-2 btn-sm mt-3 hover:scale-95 bg-primary text-accent font-bold rounded-full hover:bg-opacity-80 transition duration-300 ${
+                  selectedCategory === category &&
+                  "px-4 btn-sm mt-3xbg-secondary text-black font-bold rounded-full hover:bg-opacity-80 transition duration-300"
+                } `}
+              >
+                {category}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

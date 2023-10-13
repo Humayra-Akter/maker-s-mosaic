@@ -23,7 +23,7 @@ const FeaturedProducts = () => {
       <Swiper
         className="mt-7 bg-accent "
         spaceBetween={16}
-        slidesPerView={4.5 || 2}
+        slidesPerView={4.5}
         autoplay={true}
         loop={true}
       >

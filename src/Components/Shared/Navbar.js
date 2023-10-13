@@ -1,8 +1,12 @@
 import React from "react";
 import avatar from "../../images/banner/avatar.png";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setSearch } from "../../redux/Slices/SearchSlice";
 
 const Navbar = () => {
+  const selectedItems = localStorage.getItem("selectedItems");
+  const dispatch = useDispatch();
   return (
     <div className="navbar bg-neutral">
       <div className="flex-1">
@@ -13,28 +17,40 @@ const Navbar = () => {
           Maker's Mosaic
         </Link>
       </div>
-      <div>
-        <Link
-          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
-          to="/products"
-        >
-          PRODUCTS
-        </Link>
-      </div>
-      <div>
-        <Link
-          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
-          to="/login"
-        >
-          LOGIN
-        </Link>
-      </div>
+      <Link
+        className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+        to="/products"
+      >
+        PRODUCTS
+      </Link>
+      <Link
+        className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+        to="/order"
+      >
+        ORDER
+      </Link>
+      <Link
+        className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+        to="/dashboard"
+      >
+        DASHBOARD
+      </Link>
+      <Link
+        className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+        to="/login"
+      >
+        LOGIN
+      </Link>
       <div>
         <div className="form-control">
           <input
-            type="text"
-            placeholder="Search"
-            className="input input-sm input-bordered w-24 md:w-auto"
+            type="search"
+            name="search"
+            id=""
+            placeholder="Search here"
+            autoComplete="off"
+            onChange={(e) => dispatch(setSearch(e.target.value))}
+            className="p-3 border border-gray-400 input-sm rounded-lg outline-none"
           />
         </div>
         <div className="dropdown dropdown-end">

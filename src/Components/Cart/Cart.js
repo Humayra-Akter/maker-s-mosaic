@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ItemCard from "./ItemCard";
 import { useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const [activeCart, setActiveCart] = useState(false);
@@ -11,6 +12,11 @@ const Cart = () => {
     (total, item) => total + item.qty * item.price,
     0
   );
+  const navigate = useNavigate();
+  const handleCheckout = () => {
+    localStorage.setItem("selectedItems", JSON.stringify(cartItems));
+    navigate("/order");
+  };
 
   return (
     <>
@@ -32,6 +38,10 @@ const Cart = () => {
           >
             x
           </div>
+        </div>
+        <div>
+          {" "}
+          <h3>Total Cost: ${totalPrice}</h3>{" "}
         </div>
 
         {cartItems.length > 0 ? (
@@ -56,14 +66,16 @@ const Cart = () => {
           </h2>
         )}
 
-        <div>{/* <h3>Total Cost: ${totalCost}</h3> */}</div>
         <div className="absolute bottom-0 ">
           <h3 className="font-semibold text-gray-800">Items : {totalQty}</h3>
           <h3 className="font-semibold text-gray-800">
             Total Amount : {totalPrice}
           </h3>
-          <hr className="w-[18vw] my-2" />
-          <button className="bg-primary font-bold px-3 text-white py-2 rounded-lg w-[18vw] mb-5">
+          <hr className="lg:w-[18vw] my-2" />{" "}
+          <button
+            onClick={handleCheckout}
+            className="bg-primary font-bold px-3 text-white py-2 rounded-lg lg:w-[18vw] mb-5"
+          >
             Checkout
           </button>
         </div>
