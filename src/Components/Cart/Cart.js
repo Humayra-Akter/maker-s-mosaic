@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import ItemCard from "./ItemCard";
 import { useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../../firebase.init";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 const Cart = () => {
+  const [user] = useAuthState(auth);
   const [activeCart, setActiveCart] = useState(false);
   const cartItems = useSelector((state) => state.cart.cart);
   const totalQty = cartItems.reduce((totalQty, item) => totalQty + item.qty, 0);
@@ -72,12 +75,21 @@ const Cart = () => {
             Total Amount : {totalPrice}
           </h3>
           <hr className="lg:w-[18vw] my-2" />{" "}
-          <button
-            onClick={handleCheckout}
-            className="bg-primary font-bold px-3 text-white py-2 rounded-lg lg:w-[18vw] mb-5"
-          >
-            Checkout
-          </button>
+          {user ? (
+            <button
+              onClick={handleCheckout}
+              className="bg-primary font-bold px-3 text-white py-2 rounded-lg lg:w-[18vw] mb-5"
+            >
+              Checkout
+            </button>
+          ) : (
+            <Link
+              to="/login"
+              className="text-extrabold underline text-red-600"
+            >
+              Login to further checkout
+            </Link>
+          )}
         </div>
       </div>
       <FaShoppingCart

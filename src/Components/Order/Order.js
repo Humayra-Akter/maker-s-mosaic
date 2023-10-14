@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Modal from "react-modal";
 import { useForm } from "react-hook-form";
 import ReactModal from "react-modal";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 
 const Order = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -11,22 +13,45 @@ const Order = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
+  const navigate = useNavigate();
+  const [user] = useAuthState(auth);
+  const [loggedUser, setLoggedUser] = useState([]);
 
+  useEffect(() => {
+    if (user) {
+      fetch(`/allUser.json?email=${user.email}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.length > 0) {
+            const matchingUser = data.find(
+              (userData) => userData.email === user.email
+            );
+            if (matchingUser) {
+              setLoggedUser(matchingUser);
+            }
+          }
+        });
+    }
+  }, [user]);
+  console.log(loggedUser);
+  useEffect(() => {}, [selectedItems]);
+
+  const placeOrder = () => {
+    openModal();
+  };
   const openModal = () => {
     setModalIsOpen(true);
   };
 
   const closeModal = () => {
     setModalIsOpen(false);
+    reset();
+    navigate("/");
   };
 
-  useEffect(() => {}, [selectedItems]);
-
-  const placeOrder = () => {
-    openModal();
-  };
   return (
     <div>
       <div className="lg:grid grid-cols-2">
@@ -82,6 +107,7 @@ const Order = () => {
                       </label>
                       <input
                         type="email"
+                        value={loggedUser?.email}
                         placeholder="Your email"
                         name="email"
                         className="input input-sm input-bordered w-full "
@@ -97,6 +123,7 @@ const Order = () => {
                       </label>
                       <input
                         type="digit"
+                        required
                         placeholder="Your Contact number"
                         name="contact"
                         className="input input-sm input-bordered w-full "
@@ -111,6 +138,7 @@ const Order = () => {
                       </label>
                       <input
                         type="text"
+                        value={loggedUser?.address}
                         placeholder="Your address"
                         name="address"
                         className="input input-md input-bordered w-full"
@@ -174,10 +202,9 @@ const Order = () => {
             >
               Thank you for your order!
             </h1>
-            <div className="mt-12">
-              {" "}
+            <div className="mt-12 flex justify-center items-center">
               <button
-                className="btn btn-sm text-xs w-full border-secondary text-accent font-bold bg-primary"
+                className="btn btn-sm text-xs w-1/2 border-secondary text-accent font-bold bg-primary"
                 onClick={closeModal}
               >
                 Close

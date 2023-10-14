@@ -1,12 +1,23 @@
 import React from "react";
 import avatar from "../../images/banner/avatar.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setSearch } from "../../redux/Slices/SearchSlice";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
 
 const Navbar = () => {
-  const selectedItems = localStorage.getItem("selectedItems");
+  const [user] = useAuthState(auth);
+  const navigate = useNavigate();
   const dispatch = useDispatch();
+  const logout = () => {
+    localStorage.removeItem("userRole");
+    signOut(auth);
+    navigate("/");
+  };
+  const userRole = localStorage.getItem("userRole");
+
   return (
     <div className="navbar bg-neutral">
       <div className="flex-1">
@@ -23,18 +34,36 @@ const Navbar = () => {
       >
         PRODUCTS
       </Link>
+      {/* customer dashboard */}
+
+      {userRole === "admin" ? (
+        <Link
+          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+          to="/adminDashboard"
+        >
+          DASHBOARD
+        </Link>
+      ) : (
+        <></>
+      )}
+      {userRole === "user" ? (
+        <Link
+          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+          to="/userDashboard"
+        >
+          USER-DASHBOARD
+        </Link>
+      ) : (
+        <></>
+      )}
+
       <Link
         className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
-        to="/dashboard"
+        to="/feedback"
       >
-        DASHBOARD
+        FEEDBACK
       </Link>
-      <Link
-        className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
-        to="/login"
-      >
-        LOGIN
-      </Link>
+
       <div>
         <div className="form-control">
           <input
@@ -58,16 +87,41 @@ const Navbar = () => {
             className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
           >
             <li>
-              <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </a>
+              {userRole === "user" ? (
+                <Link
+                  to="/userDashboard"
+                  className="text-primary font-bold hover:text-black"
+                >
+                  <div class="indicator">Profile</div>
+                </Link>
+              ) : (
+                <></>
+              )}
+            </li>{" "}
+            <li>
+              {userRole === "admin" ? (
+                <Link className="text-primary font-bold hover:text-black">
+                  Dashboard
+                </Link>
+              ) : (
+                <></>
+              )}
             </li>
             <li>
-              <a>Settings</a>
-            </li>
-            <li>
-              <a>Logout</a>
+              {user ? (
+                <button
+                  onClick={logout}
+                  className="text-primary font-bold hover:text-black pr-7 "
+                >
+                  <div class="indicator">Signout</div>
+                </button>
+              ) : (
+                <Link to="/login">
+                  <button className="text-primary font-bold hover:text-black pr-7 ">
+                    <div class="indicator">Login</div>
+                  </button>
+                </Link>
+              )}
             </li>
           </ul>
         </div>

@@ -6,6 +6,7 @@
     "address": "123 Shopper St, USA",
     "img": "/images/users/1.jpg",
     "phone": "880-1552487769",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD1",
@@ -35,6 +36,7 @@
     "address": "456 Buyer Ln, USA",
     "img": "/images/users/2.jpg",
     "phone": "880-1552487321",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD2",
@@ -64,6 +66,7 @@
     "address": "789 Shopper Blvd, USA",
     "img": "/images/users/3.jpg",
     "phone": "880-1552487643",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD3",
@@ -87,6 +90,7 @@
     "address": "1010 Shopper Ave, USA",
     "img": "/images/users/4.jpg",
     "phone": "880-1552487975",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD4",
@@ -116,6 +120,7 @@
     "address": "1212 Shopper Way, USA",
     "img": "/images/users/5.jpg",
     "phone": "880-1552487890",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD5",
@@ -145,6 +150,7 @@
     "address": "1414 Shopper Pl, USA",
     "img": "/images/users/6.jpg",
     "phone": "880-1552488044",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD6",
@@ -168,6 +174,7 @@
     "address": "1616 Shopper Cir, USA",
     "img": "/images/users/7.jpg",
     "phone": "880-1552488212",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD7",
@@ -197,6 +204,7 @@
     "address": "1818 Shopper Dr, USA",
     "img": "/images/users/8.jpg",
     "phone": "880-1552488381",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD8",
@@ -220,6 +228,7 @@
     "address": "2020 Shopper Rd, USA",
     "img": "/images/users/9.jpg",
     "phone": "880-1552488553",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD9",
@@ -243,6 +252,7 @@
     "address": "2222 Shopper Ave, USA",
     "img": "/images/users/10.jpg",
     "phone": "880-1552488724",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD10",
@@ -266,6 +276,7 @@
     "address": "2323 Shopper Rd, USA",
     "img": "/images/users/11.jpg",
     "phone": "880-1552488898",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD11",
@@ -295,6 +306,7 @@
     "address": "2424 Shopper Ave, USA",
     "img": "/images/users/12.jpg",
     "phone": "880-1552489067",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD12",
@@ -318,6 +330,7 @@
     "address": "2525 Shopper Blvd, USA",
     "img": "/images/users/13.jpg",
     "phone": "880-1552489231",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD13",
@@ -341,6 +354,7 @@
     "address": "2626 Shopper Ln, USA",
     "img": "/images/users/14.jpg",
     "phone": "880-1552489400",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD14",
@@ -370,6 +384,7 @@
     "address": "2727 Shopper St, USA",
     "img": "/images/users/15.jpg",
     "phone": "880-1552489579",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD15",
@@ -393,6 +408,7 @@
     "address": "2828 Shopper Blvd, USA",
     "img": "/images/users/16.jpg",
     "phone": "880-1552489743",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD16",
@@ -416,6 +432,7 @@
     "address": "2929 Shopper Way, USA",
     "img": "/images/users/17.jpg",
     "phone": "880-1552489910",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD17",
@@ -439,6 +456,7 @@
     "address": "3030 Shopper Pl, USA",
     "img": "/images/users/18.jpg",
     "phone": "880-1552490082",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD18",
@@ -468,6 +486,7 @@
     "address": "3131 Shopper Cir, USA",
     "img": "/images/users/19.jpg",
     "phone": "880-1552490251",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD19",
@@ -491,6 +510,7 @@
     "address": "3232 Shopper Dr, USA",
     "img": "/images/users/20.jpg",
     "phone": "880-1552490422",
+    "role": "user",
     "orders": [
       {
         "orderNumber": "ORD20",

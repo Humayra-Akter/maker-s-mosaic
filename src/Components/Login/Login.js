@@ -6,6 +6,7 @@ import Loading from "../Shared/Loading";
 import auth from "../../firebase.init";
 import eye from "../../images/eye-svgrepo-com.svg";
 import eyeClose from "../../images/eye-close-svgrepo-com.svg";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const {
@@ -13,7 +14,7 @@ const Login = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-
+  const [loggedUser, setLoggedUser] = useState([]);
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const [selectedRole, setSelectedRole] = useState("");
@@ -25,7 +26,13 @@ const Login = () => {
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
-
+  useEffect(() => {
+    fetch("/allUser.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setLoggedUser(data);
+      });
+  }, []);
   let from = location.state?.from?.pathname || "/";
 
   if (loading) {
@@ -39,14 +46,29 @@ const Login = () => {
   if (user) {
     navigate(from, { replace: true });
   }
+
   const onSubmit = (data) => {
-    signInWithEmailAndPassword(data.email, data.password);
-    localStorage.setItem("userRole", data.role);
+    const matchingUser = loggedUser.find(
+      (sysUser) => sysUser.email === data.email && sysUser.role === data.role
+    );
+    console.log(data);
+    if (matchingUser) {
+      signInWithEmailAndPassword(data.email, data.password);
+      localStorage.setItem("userRole", data.role);
+    } else {
+      toast.error(
+        `${data.email} or ${data.role} is invalid. Please check it again`,
+        {
+          position: toast.POSITION.TOP_CENTER,
+        }
+      );
+    }
     const userRole = localStorage.getItem("userRole");
+    navigate(`/${userRole}Dashboard`);
   };
 
   return (
-    <div className="bg-amber-50 pb-32 pt-28">
+    <div className=" pb-32 pt-28">
       <div className="mx-auto max-w-md">
         <div className="card bg-accent border-secondary border-4 shadow-xl">
           <div>
@@ -113,7 +135,7 @@ const Login = () => {
                     value={selectedRole}
                     onChange={(e) => setSelectedRole(e.target.value)}
                   >
-                    <option value="customer">Customer</option>
+                    <option value="user">User</option>
                     <option value="admin">Admin</option>
                   </select>
                   <label>

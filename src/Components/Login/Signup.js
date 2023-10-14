@@ -73,7 +73,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="bg-amber-50 pb-32 pt-12">
+    <div className=" pb-32 pt-12">
       <div className="mx-auto lg:max-w-2xl md:max-w-xl sm:max-w">
         <div className="card lg:bg-accent lg:border-secondary lg:border-2 lg:shadow-xl">
           <div className="card-body">

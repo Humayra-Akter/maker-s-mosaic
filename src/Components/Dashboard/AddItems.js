@@ -344,7 +344,7 @@ const AddItems = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-center">
+            <div className="flex mt-7 items-center justify-center">
               <button
                 type="submit"
                 className="btn btn-sm text-xs w-1/3 uppercase border-accent text-accent font-bold bg-primary"

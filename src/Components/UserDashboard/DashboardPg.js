@@ -5,9 +5,8 @@ import rewrd from "../../images/banner/rewind.png";
 import ban1 from "../../images/banner/purchase-order.png";
 import ban2 from "../../images/banner/add.png";
 import ban3 from "../../images/banner/reviews.png";
-import ban4 from "../../images/banner/add-user.png";
 
-const Dashboard = () => {
+const DashboardPg = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
@@ -22,14 +21,14 @@ const Dashboard = () => {
           type="checkbox"
           className="drawer-toggle"
         />
-        <div className="drawer-content  p-11">
+        <div className="drawer-content p-11">
           {/* Page content here */}
           <Outlet />
           <label
             htmlFor="dashboard-drawer"
             className="btn btn-primary btn-sm drawer-button lg:hidden"
           >
-            open drawer
+            Open Drawer
           </label>
           {isSidebarOpen ? (
             <button
@@ -53,61 +52,32 @@ const Dashboard = () => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="menu p-4 w-60 min-h-full bg-accent text-base-content">
-            {/* Sidebar content here */}
+          <ul className="menu p-4 w-80 min-h-full bg-accent text-base-content">
             <Link
-              className="text-primary mx-8 mt-10 mb-4 text-lg font-bold hover:text-black "
-              to="/adminDashboard"
+              className="text-primary mx-8 text-lg my-6 font-bold hover:text-black "
+              to="/userDashboard"
             >
               <span className="flex gap-4">
                 <img className="w-6 h-8" src={ban2} alt="" />
-                Admin Dashboard
+                User Dashboard
               </span>
             </Link>
             <Link
-              className="text-primary mx-8 text-lg mb-4 font-bold hover:text-black "
-              to="/adminDashboard/addAdmin"
+              className="text-primary mx-8 text-lg mb-6 font-bold hover:text-black "
+              to="/userDashboard/booking"
             >
               <span className="flex gap-4">
                 <img className="w-6" src={ban1} alt="" />
-                Add Admin
-              </span>
-            </Link>{" "}
-            <Link
-              className="text-primary mx-8 text-lg mb-4 font-bold hover:text-black "
-              to="/adminDashboard/addItem"
-            >
-              <span className="flex gap-4">
-                <img className="w-6" src={ban1} alt="" />
-                Add Item
-              </span>
-            </Link>{" "}
-            <Link
-              className="text-primary mx-8 text-lg mb-4 font-bold hover:text-black "
-              to="/adminDashboard/items"
-            >
-              <span className="flex gap-4">
-                <img className="w-6" src={ban1} alt="" />
-                Items
+                Booking History
               </span>
             </Link>
             <Link
-              className="text-primary mx-8  mb-4  text-lg font-bold hover:text-black "
-              to="/adminDashboard/reviews"
+              className="text-primary mx-8 text-lg mb-6 font-bold hover:text-black "
+              to="/userDashboard/notifications"
             >
               <span className="flex gap-4">
                 <img className="w-6" src={ban3} alt="" />
-                Reviews
-              </span>
-            </Link>
-            <Link
-              className="text-primary mx-8 mb-4 text-lg font-bold hover:text-black "
-              to="/adminDashboard/users"
-            >
-              <span className="flex gap-4">
-                {" "}
-                <img className="w-6" src={ban4} alt="" />
-                Users
+                Notifications Center
               </span>
             </Link>
           </ul>
@@ -117,4 +87,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default DashboardPg;

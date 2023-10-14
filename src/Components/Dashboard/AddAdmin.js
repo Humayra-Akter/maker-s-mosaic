@@ -15,6 +15,7 @@ const AddAdmin = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
   const navigate = useNavigate();
@@ -22,7 +23,13 @@ const AddAdmin = () => {
 
   const imageStorageKey = "81a2b36646ff008b714220192e61707d";
   const [admins, setAdmins] = useState([]);
-
+  useEffect(() => {
+    fetch("/admin.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setAdmins(data);
+      });
+  }, []);
   if (loading) {
     return <Loading></Loading>;
   }
@@ -222,7 +229,7 @@ const AddAdmin = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-3/5 bg-gray-100 h-screen p-4">
+      <div className="lg:w-2/5 bg-accent shadow-lg h-screen p-4">
         <h2 className="text-lg text-center text-primary font-bold">
           Existing Admins
         </h2>
@@ -231,16 +238,14 @@ const AddAdmin = () => {
             {admins.map((admin) => (
               <tr key={admin._id}>
                 <td className="border px-4 py-2">
-                  <span className="uppercase font-medium font-semibold">
-                    {admin.name}
-                  </span>
+                  <span className="uppercase font-semibold">{admin.name}</span>
                   <br /> {admin.email}
                 </td>
                 <td className="border px-4 py-2">
                   <img
                     src={admin.img}
                     alt={admin.name}
-                    className="w-20 rounded-full"
+                    className="w-20 h-auto rounded-full"
                   />
                 </td>
               </tr>
