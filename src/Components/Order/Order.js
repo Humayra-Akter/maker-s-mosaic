@@ -1,12 +1,32 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Modal from "react-modal";
+import { useForm } from "react-hook-form";
+import ReactModal from "react-modal";
 
 const Order = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const storedSelectedItems = JSON.parse(localStorage.getItem("selectedItems"));
   const [selectedItems, setSelectedItems] = useState(storedSelectedItems || []);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   useEffect(() => {}, [selectedItems]);
 
+  const placeOrder = () => {
+    openModal();
+  };
   return (
     <div>
       <div className="lg:grid grid-cols-2">
@@ -52,9 +72,7 @@ const Order = () => {
                   >
                     confirm Order
                   </h1>
-
-                  {/* <form onSubmit={handleSubmit(onSubmit)}> */}
-                  <form>
+                  <form onSubmit={handleSubmit(placeOrder)}>
                     {/* email field */}
                     <div className="form-control w-full">
                       <label className="label">
@@ -112,7 +130,6 @@ const Order = () => {
                         className="input input-md input-bordered w-full"
                       />
                     </div>
-
                     <p className="text-center my-3">
                       <small className="font-semibold">
                         <Link className="text-primary" to="/register">
@@ -120,7 +137,6 @@ const Order = () => {
                         </Link>
                       </small>
                     </p>
-
                     <div className="flex items-center justify-center">
                       <input
                         className="btn btn-sm text-xs w-1/2 border-secondary text-accent font-bold bg-primary"
@@ -133,6 +149,41 @@ const Order = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          {/* <button onClick={openModal}>Open Modal</button> */}
+          <ReactModal
+            isOpen={modalIsOpen}
+            contentLabel="Order Confirmation"
+            style={{
+              overlay: {
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+              },
+              content: {
+                width: "420px",
+                height: "200px",
+                margin: "auto",
+              },
+            }}
+          >
+            <h1
+              style={{ fontFamily: "rockwell" }}
+              className="text-4xl font-bold text-center text-primary"
+            >
+              Thank you for your order!
+            </h1>
+            <div className="mt-12">
+              {" "}
+              <button
+                className="btn btn-sm text-xs w-full border-secondary text-accent font-bold bg-primary"
+                onClick={closeModal}
+              >
+                Close
+              </button>
+            </div>
+          </ReactModal>
         </div>
       </div>
     </div>
