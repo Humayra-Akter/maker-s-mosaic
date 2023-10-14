@@ -25,12 +25,6 @@ const Navbar = () => {
       </Link>
       <Link
         className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
-        to="/order"
-      >
-        ORDER
-      </Link>
-      <Link
-        className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
         to="/dashboard"
       >
         DASHBOARD

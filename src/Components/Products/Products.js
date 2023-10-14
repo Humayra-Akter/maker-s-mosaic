@@ -4,9 +4,11 @@ import ScrollToTop from "../Home/ScrollToTop";
 import Cart from "../Cart/Cart";
 import CategoryMenu from "../Cart/CategoryMenu";
 import { useSelector } from "react-redux";
+import ProductDetailPage from "./ProductDetailPage";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
+  const [details, setDetails] = useState([]);
   const category = useSelector((state) => state.category.category);
   const search = useSelector((state) => state.search.search);
   useEffect(() => {
@@ -39,11 +41,16 @@ const Products = () => {
             }
           })
           .map((product) => (
-            <ProductCard key={product.id} product={product}></ProductCard>
+            <ProductCard
+              key={product.id}
+              product={product}
+              setDetails={setDetails}
+            ></ProductCard>
           ))}
       </div>
       <Cart />
       <ScrollToTop />
+      <ProductDetailPage details={details} />
     </div>
   );
 };

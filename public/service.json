@@ -56,7 +56,7 @@
     }
   },
   {
-    "id": "artPrint3",
+    "id": "3",
     "title": "Vintage Floral Art Poster",
     "description": "A vintage-style art poster featuring classic floral patterns.",
     "category": "Art Prints",
@@ -84,7 +84,7 @@
     }
   },
   {
-    "id": "artPrint4",
+    "id": "4",
     "title": "Abstract Watercolor Artwork",
     "description": "An abstract watercolor art piece that adds a modern touch to your space.",
     "category": "Art Prints",
@@ -112,7 +112,7 @@
     }
   },
   {
-    "id": "artPrint5",
+    "id": "5",
     "title": "Nature-Inspired Art Print",
     "description": "A nature-inspired art print featuring trees and birds in soothing colors.",
     "category": "Art Prints",
@@ -140,7 +140,7 @@
     }
   },
   {
-    "id": "artPrint6",
+    "id": "6",
     "title": "Modern Art Print Set",
     "description": "A set of three modern art prints to adorn your walls with contemporary style.",
     "category": "Art Prints",
@@ -168,7 +168,7 @@
     }
   },
   {
-    "id": "candlesSoaps1",
+    "id": "7",
     "title": "Lavender Scented Candle",
     "description": "A relaxing lavender-scented candle to unwind after a long day.",
     "category": "Candles & Soaps",
@@ -196,7 +196,7 @@
     }
   },
   {
-    "id": "candlesSoaps2",
+    "id": "8",
     "title": "Handcrafted Soap Set",
     "description": "A set of handcrafted, all-natural soaps for a luxurious bath experience.",
     "category": "Candles & Soaps",
@@ -224,7 +224,7 @@
     }
   },
   {
-    "id": "candlesSoaps3",
+    "id": "9",
     "title": "Beeswax Candles Set",
     "description": "A set of natural beeswax candles for a warm and cozy ambiance.",
     "category": "Candles & Soaps",
@@ -252,7 +252,7 @@
     }
   },
   {
-    "id": "candlesSoaps4",
+    "id": "10",
     "title": "Exfoliating Bath Bombs",
     "description": "A set of exfoliating bath bombs for a spa-like bath experience at home.",
     "category": "Candles & Soaps",
@@ -280,7 +280,7 @@
     }
   },
   {
-    "id": "candlesSoaps5",
+    "id": "11",
     "title": "Citrus Splash Candle",
     "description": "A refreshing citrus-scented candle to brighten your space.",
     "category": "Candles & Soaps",
@@ -308,7 +308,7 @@
     }
   },
   {
-    "id": "candlesSoaps6",
+    "id": "12",
     "title": "Organic Lavender Soap",
     "description": "A soothing organic lavender soap for a gentle and relaxing bath.",
     "category": "Candles & Soaps",
@@ -336,7 +336,7 @@
     }
   },
   {
-    "id": "fashionAccessories1",
+    "id": "13",
     "title": "Silver Cuff Bracelet",
     "description": "A stylish silver cuff bracelet to complement your outfits.",
     "category": "Fashion Accessories",
@@ -364,7 +364,7 @@
     }
   },
   {
-    "id": "fashionAccessories2",
+    "id": "14",
     "title": "Leather Tote Bag",
     "description": "A trendy leather tote bag for your everyday style.",
     "category": "Fashion Accessories",
@@ -392,7 +392,7 @@
     }
   },
   {
-    "id": "fashionAccessories3",
+    "id": "15",
     "title": "Crystal Necklace",
     "description": "A dazzling crystal necklace to add a touch of elegance to your look.",
     "category": "Fashion Accessories",
@@ -420,7 +420,7 @@
     }
   },
   {
-    "id": "fashionAccessories4",
+    "id": "16",
     "title": "Silk Scarf",
     "description": "A luxurious silk scarf with a stunning print for a touch of glamour.",
     "category": "Fashion Accessories",
@@ -448,7 +448,7 @@
     }
   },
   {
-    "id": "fashionAccessories5",
+    "id": "17",
     "title": "Men's Leather Wallet",
     "description": "A classic men's leather wallet with multiple compartments.",
     "category": "Fashion Accessories",
@@ -476,7 +476,7 @@
     }
   },
   {
-    "id": "fashionAccessories6",
+    "id": "18",
     "title": "Statement Earrings",
     "description": "A pair of statement earrings to elevate your fashion game.",
     "category": "Fashion Accessories",
@@ -505,7 +505,7 @@
   },
 
   {
-    "id": "glasswork1",
+    "id": "19",
     "title": "Handblown Glass Vase",
     "description": "A stunning handblown glass vase for your floral arrangements.",
     "category": "Glasswork",
@@ -533,7 +533,7 @@
     }
   },
   {
-    "id": "glasswork2",
+    "id": "20",
     "title": "Stained Glass Window Panel",
     "description": "A colorful stained glass window panel to enhance your home decor.",
     "category": "Glasswork",
@@ -561,7 +561,7 @@
     }
   },
   {
-    "id": "glasswork3",
+    "id": "21",
     "title": "Glass Sculpture",
     "description": "An exquisite glass sculpture that serves as a centerpiece for any room.",
     "category": "Glasswork",
@@ -589,7 +589,7 @@
     }
   },
   {
-    "id": "glasswork4",
+    "id": "22",
     "title": "Crystal Wine Glasses",
     "description": "A set of elegant crystal wine glasses for special occasions.",
     "category": "Glasswork",
@@ -617,7 +617,7 @@
     }
   },
   {
-    "id": "homeDecor1",
+    "id": "23",
     "title": "Handwoven Wall Tapestry",
     "description": "A beautiful handwoven wall tapestry to adorn your living space.",
     "category": "Home Decor",
@@ -645,7 +645,7 @@
     }
   },
   {
-    "id": "homeDecor2",
+    "id": "24",
     "title": "Decorative Throw Pillows",
     "description": "A set of decorative throw pillows to add comfort and style to your sofa.",
     "category": "Home Decor",
@@ -673,7 +673,7 @@
     }
   },
   {
-    "id": "homeDecor3",
+    "id": "25",
     "title": "Wooden Wall Clock",
     "description": "A rustic wooden wall clock to enhance the charm of your home.",
     "category": "Home Decor",
@@ -701,7 +701,7 @@
     }
   },
   {
-    "id": "homeDecor4",
+    "id": "26",
     "title": "Ceramic Plant Pots",
     "description": "A set of ceramic plant pots to showcase your favorite houseplants.",
     "category": "Home Decor",
@@ -729,7 +729,7 @@
     }
   },
   {
-    "id": "homeDecor5",
+    "id": "27",
     "title": "Modern Wall Art Prints",
     "description": "A set of modern wall art prints to transform your walls into a gallery.",
     "category": "Home Decor",
@@ -757,7 +757,7 @@
     }
   },
   {
-    "id": "homeDecor6",
+    "id": "28",
     "title": "Rattan Wall Mirror",
     "description": "A stylish rattan wall mirror to add depth and elegance to your space.",
     "category": "Home Decor",
@@ -785,7 +785,7 @@
     }
   },
   {
-    "id": "jewelryHandcraft1",
+    "id": "29",
     "title": "Handcrafted Silver Necklace",
     "description": "A stunning handcrafted silver necklace with intricate details.",
     "category": "Jewelry Handcraft",
@@ -813,7 +813,7 @@
     }
   },
   {
-    "id": "jewelryHandcraft2",
+    "id": "30",
     "title": "Gemstone Earrings",
     "description": "Exquisite gemstone earrings handcrafted to perfection.",
     "category": "Jewelry Handcraft",
@@ -841,7 +841,7 @@
     }
   },
   {
-    "id": "jewelryHandcraft3",
+    "id": "31",
     "title": "Leather and Brass Bracelet",
     "description": "A stylish leather and brass bracelet handcrafted for a unique look.",
     "category": "Jewelry Handcraft",
@@ -869,7 +869,7 @@
     }
   },
   {
-    "id": "jewelryHandcraft4",
+    "id": "32",
     "title": "Enamel Flower Brooch",
     "description": "A delicate enamel flower brooch handcrafted for a touch of elegance.",
     "category": "Jewelry Handcraft",
@@ -897,7 +897,7 @@
     }
   },
   {
-    "id": "jewelryHandcraft5",
+    "id": "33",
     "title": "Wood and Resin Pendant",
     "description": "A unique wood and resin pendant handcrafted for a natural look.",
     "category": "Jewelry Handcraft",
@@ -925,7 +925,7 @@
     }
   },
   {
-    "id": "jewelryHandcraft6",
+    "id": "34",
     "title": "Copper Wire Ring",
     "description": "A handcrafted copper wire ring with a unique design.",
     "category": "Jewelry Handcraft",
@@ -953,7 +953,7 @@
     }
   },
   {
-    "id": "personalCareProducts1",
+    "id": "35",
     "title": "Handcrafted Lavender Soap",
     "description": "Handcrafted lavender soap for a soothing and relaxing bath experience.",
     "category": "Personal Care Products",
@@ -981,7 +981,7 @@
     }
   },
   {
-    "id": "personalCareProducts2",
+    "id": "36",
     "title": "Organic Rosewater Toner",
     "description": "Organic rosewater toner to refresh and hydrate your skin naturally.",
     "category": "Personal Care Products",
@@ -1009,7 +1009,7 @@
     }
   },
   {
-    "id": "personalCareProducts3",
+    "id": "37",
     "title": "Handmade Shea Butter Lotion",
     "description": "Handmade shea butter lotion for deep moisturization and soft skin.",
     "category": "Personal Care Products",
@@ -1037,7 +1037,7 @@
     }
   },
   {
-    "id": "personalCareProducts4",
+    "id": "38",
     "title": "Natural Hair Shampoo",
     "description": "A natural hair shampoo with gentle cleansing and nourishing properties.",
     "category": "Personal Care Products",
@@ -1065,7 +1065,7 @@
     }
   },
   {
-    "id": "personalCareProducts5",
+    "id": "39",
     "title": "Botanical Face Mask",
     "description": "A botanical face mask infused with natural herbs for radiant skin.",
     "category": "Personal Care Products",
@@ -1093,7 +1093,7 @@
     }
   },
   {
-    "id": "potteryCeramics1",
+    "id": "40",
     "title": "Handcrafted Ceramic Vase",
     "description": "A beautifully handcrafted ceramic vase to display your favorite flowers.",
     "category": "Pottery Ceramics",
@@ -1121,7 +1121,7 @@
     }
   },
   {
-    "id": "potteryCeramics2",
+    "id": "41",
     "title": "Artistic Stoneware Bowl",
     "description": "An artistic stoneware bowl for serving or decoration.",
     "category": "Pottery Ceramics",
@@ -1149,7 +1149,7 @@
     }
   },
   {
-    "id": "potteryCeramics3",
+    "id": "42",
     "title": "Handmade Ceramic Plates",
     "description": "A set of handmade ceramic plates for your dining table.",
     "category": "Pottery Ceramics",
@@ -1177,7 +1177,7 @@
     }
   },
   {
-    "id": "potteryCeramics4",
+    "id": "43",
     "title": "Clay Teapot Set",
     "description": "A clay teapot set with cups for a traditional tea experience.",
     "category": "Pottery Ceramics",
@@ -1205,7 +1205,7 @@
     }
   },
   {
-    "id": "potteryCeramics5",
+    "id": "44",
     "title": "Ceramic Candle Holders",
     "description": "A set of ceramic candle holders for creating a warm and cozy atmosphere.",
     "category": "Pottery Ceramics",
@@ -1233,7 +1233,7 @@
     }
   },
   {
-    "id": "potteryCeramics6",
+    "id": "45",
     "title": "Raku Pottery Sculpture",
     "description": "A unique Raku pottery sculpture for art lovers and collectors.",
     "category": "Pottery Ceramics",
@@ -1261,7 +1261,7 @@
     }
   },
   {
-    "id": "textiles1",
+    "id": "46",
     "title": "Handwoven Cotton Blanket",
     "description": "A handwoven cotton blanket with intricate patterns for warmth and comfort.",
     "category": "Textiles",
@@ -1289,7 +1289,7 @@
     }
   },
   {
-    "id": "textiles2",
+    "id": "47",
     "title": "Traditional Silk Scarf",
     "description": "A traditional silk scarf with vibrant colors and intricate designs.",
     "category": "Textiles",
@@ -1317,7 +1317,7 @@
     }
   },
   {
-    "id": "textiles3",
+    "id": "48",
     "title": "Embroidered Table Runner",
     "description": "An embroidered table runner with delicate patterns for a stylish dining table.",
     "category": "Textiles",
@@ -1345,7 +1345,7 @@
     }
   },
   {
-    "id": "textiles4",
+    "id": "49",
     "title": "Handmade Quilt Set",
     "description": "A handmade quilt set with patchwork patterns for a cozy bedroom.",
     "category": "Textiles",
@@ -1373,7 +1373,7 @@
     }
   },
   {
-    "id": "textiles5",
+    "id": "50",
     "title": "Handcrafted Pillow Covers",
     "description": "A set of handcrafted pillow covers with traditional motifs for home decor.",
     "category": "Textiles",
@@ -1401,7 +1401,7 @@
     }
   },
   {
-    "id": "textiles6",
+    "id": "51",
     "title": "Bamboo Fiber Towels",
     "description": "Eco-friendly bamboo fiber towels for a sustainable and soft bathroom experience.",
     "category": "Textiles",

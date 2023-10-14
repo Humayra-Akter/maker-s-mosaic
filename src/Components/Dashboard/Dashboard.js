@@ -22,7 +22,7 @@ const Dashboard = () => {
           type="checkbox"
           className="drawer-toggle"
         />
-        <div className="drawer-content flex flex-col items-center justify-center">
+        <div className="drawer-content  p-11">
           {/* Page content here */}
           <Outlet />
           <label
@@ -56,18 +56,26 @@ const Dashboard = () => {
           <ul className="menu p-4 w-60 min-h-full bg-accent text-base-content">
             {/* Sidebar content here */}
             <Link
-              className="text-primary mx-10 mt-10 mb-4 text-lg font-bold hover:text-black hover:bg-secondary"
-              to="/"
+              className="text-primary mx-8 mt-10 mb-4 text-lg font-bold hover:text-black hover:bg-secondary"
+              to="/dashboard"
             >
               <span className="flex gap-4">
-                {" "}
                 <img className="w-6" src={ban2} alt="" />
-                Add Item
+                Add Admin
               </span>
             </Link>
             <Link
-              className="text-primary mx-10 text-lg mb-4 font-bold hover:text-black hover:bg-secondary"
-              to="/"
+              className="text-primary mx-8 text-lg mb-4 font-bold hover:text-black hover:bg-secondary"
+              to="/dashboard/addItem"
+            >
+              <span className="flex gap-4">
+                <img className="w-6" src={ban1} alt="" />
+                Add Item
+              </span>
+            </Link>{" "}
+            <Link
+              className="text-primary mx-8 text-lg mb-4 font-bold hover:text-black hover:bg-secondary"
+              to="/dashboard/items"
             >
               <span className="flex gap-4">
                 {" "}
@@ -76,8 +84,8 @@ const Dashboard = () => {
               </span>
             </Link>
             <Link
-              className="text-primary mx-10  mb-4  text-lg font-bold hover:text-black hover:bg-secondary"
-              to="/"
+              className="text-primary mx-8  mb-4  text-lg font-bold hover:text-black hover:bg-secondary"
+              to="/dashboard/reviews"
             >
               <span className="flex gap-4">
                 {" "}
@@ -86,8 +94,8 @@ const Dashboard = () => {
               </span>
             </Link>
             <Link
-              className="text-primary mx-10 mb-4 text-lg font-bold hover:text-black hover:bg-secondary"
-              to="/"
+              className="text-primary mx-8 mb-4 text-lg font-bold hover:text-black hover:bg-secondary"
+              to="/dashboard/users"
             >
               <span className="flex gap-4">
                 {" "}

@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/Slices/CartSlice";
 import { toast } from "react-toastify";
+import frwrd from "../../images/banner/forward.png";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, setDetails }) => {
   const { id, images, title, price, description } = product;
+  const [productDetail, setProductDetail] = useState([]);
+
   const [showFullDescription, setShowFullDescription] = useState(false);
   const dispatch = useDispatch();
   const toggleDescription = () => {
@@ -19,6 +22,12 @@ const ProductCard = ({ product }) => {
     });
   };
 
+  const handleKnowMoreClick = () => {
+    if (!productDetail.includes(product)) {
+      setProductDetail([...productDetail, product]);
+      setDetails(product);
+    }
+  };
   return (
     <div className="bg-neutral">
       <div className="border-2 text-black relative m-2 hover:scale-105 cursor-grab transition-all duration-300 ease-in-out">
@@ -28,7 +37,7 @@ const ProductCard = ({ product }) => {
               <img
                 src={images}
                 alt="handcraft"
-                className="w-24 h-24 rounded-full"
+                className="w-24 h-24 rounded-full border-2 border-primary shadow-md"
               />
             </figure>
             <div className="text-right p-2 text-primary font-bold ">
@@ -49,7 +58,13 @@ const ProductCard = ({ product }) => {
               </span>
             )}
           </p>
-
+          <label
+            htmlFor="product-detail"
+            onClick={handleKnowMoreClick}
+            className="btn btn-sm rounded-full absolute w-4 bottom-2 left-2 border-secondary text-white text-xs font-extrabold bg-primary "
+          >
+            ↪   
+          </label>
           <div className="flex justify-end p-2">
             <button
               onClick={() => {
