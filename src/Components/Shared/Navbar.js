@@ -28,103 +28,176 @@ const Navbar = () => {
           Maker's Mosaic
         </Link>
       </div>
-      <Link
-        className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
-        to="/products"
-      >
-        PRODUCTS
-      </Link>
-      {/* customer dashboard */}
 
-      {userRole === "admin" ? (
-        <Link
-          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
-          to="/adminDashboard"
-        >
-          DASHBOARD
-        </Link>
-      ) : (
-        <></>
-      )}
-      {userRole === "user" ? (
-        <Link
-          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
-          to="/userDashboard"
-        >
-          USER-DASHBOARD
-        </Link>
-      ) : (
-        <></>
-      )}
-
-      <Link
-        className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
-        to="/feedback"
-      >
-        FEEDBACK
-      </Link>
-
-      <div>
-        <div className="form-control">
-          <input
-            type="search"
-            name="search"
-            id=""
-            placeholder="Search here"
-            autoComplete="off"
-            onChange={(e) => dispatch(setSearch(e.target.value))}
-            className="p-3 border border-gray-400 input-sm rounded-lg outline-none"
-          />
-        </div>
-        <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-              <img src={avatar} alt="" />
-            </div>
-          </label>
-          <ul
-            tabIndex={0}
-            className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+      {/* customer dashboard for large screens (lg) */}
+      <div className="hidden lg:flex">
+        {userRole === "admin" && (
+          <Link
+            className="mx-3 font-extrabold normal-case text-primary hover-text-secondary text-md"
+            to="/adminDashboard"
           >
-            <li>
-              {userRole === "user" ? (
-                <Link
-                  to="/userDashboard"
-                  className="text-primary font-bold hover:text-black"
-                >
-                  <div class="indicator">Profile</div>
-                </Link>
-              ) : (
-                <></>
-              )}
-            </li>{" "}
-            <li>
-              {userRole === "admin" ? (
-                <Link className="text-primary font-bold hover:text-black">
-                  Dashboard
-                </Link>
-              ) : (
-                <></>
-              )}
-            </li>
-            <li>
-              {user ? (
-                <button
-                  onClick={logout}
-                  className="text-primary font-bold hover:text-black pr-7 "
-                >
-                  <div class="indicator">Signout</div>
+            DASHBOARD
+          </Link>
+        )}
+        {userRole === "user" && (
+          <Link
+            className="mx-3 font-extrabold normal-case text-primary hover-text-secondary text-md"
+            to="/userDashboard"
+          >
+            USER-DASHBOARD
+          </Link>
+        )}
+      </div>
+      {/* customer dashboard for large screens (lg) */}
+      <div className="hidden lg:flex">
+        <Link
+          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+          to="/feedback"
+        >
+          FEEDBACK
+        </Link>
+        <Link
+          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+          to="/products"
+        >
+          PRODUCTS
+        </Link>
+      </div>
+
+      {/* Search input for all screen sizes */}
+      <div className="form-control">
+        <input
+          type="search"
+          name="search"
+          id=""
+          placeholder="Search here"
+          autoComplete="off"
+          onChange={(e) => dispatch(setSearch(e.target.value))}
+          className="p-3 border border-gray-400 input-sm rounded-lg outline-none"
+        />
+      </div>
+      {/* Create a dropdown for small and medium screens */}
+      <div className="dropdown dropdown-end md:hidden">
+        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+          <div className="w-10 rounded-full">
+            <img src={avatar} alt="" />
+          </div>
+        </label>
+        <ul
+          tabIndex={0}
+          className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+        >
+          <li>
+            <Link
+              to="/products"
+              className="text-primary font-bold hover:text-black"
+            >
+              <div className="indicator">Products</div>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/feedback"
+              className="text-primary font-bold hover:text-black"
+            >
+              <div className="indicator">Feedback</div>
+            </Link>
+          </li>
+          <li>
+            {userRole === "user" ? (
+              <Link
+                to="/userDashboard"
+                className="text-primary font-bold hover:text-black"
+              >
+                <div className="indicator">Profile</div>
+              </Link>
+            ) : (
+              <></>
+            )}
+          </li>
+          <li>
+            {userRole === "admin" ? (
+              <Link
+                to="/adminDashboard"
+                className="text-primary font-bold hover:text-black"
+              >
+                <div className="indicator">Dashboard</div>
+              </Link>
+            ) : (
+              <></>
+            )}
+          </li>
+          <li>
+            {user ? (
+              <button
+                onClick={logout}
+                className="text-primary font-bold hover:text-black pr-7"
+              >
+                <div className="indicator">Signout</div>
+              </button>
+            ) : (
+              <Link to="/login">
+                <button className="text-primary font-bold hover:text-black pr-7">
+                  <div className="indicator">Login</div>
                 </button>
-              ) : (
-                <Link to="/login">
-                  <button className="text-primary font-bold hover:text-black pr-7 ">
-                    <div class="indicator">Login</div>
-                  </button>
-                </Link>
-              )}
-            </li>
-          </ul>
-        </div>
+              </Link>
+            )}
+          </li>
+        </ul>
+      </div>
+
+      {/* Avatar dropdown for large screens */}
+      <div className="dropdown dropdown-end hidden md:block">
+        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+          <div className="w-10 rounded-full">
+            <img src={avatar} alt="" />
+          </div>
+        </label>
+        <ul
+          tabIndex={0}
+          className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+        >
+          <li>
+            {userRole === "user" ? (
+              <Link
+                to="/userDashboard"
+                className="text-primary font-bold hover:text-black"
+              >
+                <div className="indicator">Profile</div>
+              </Link>
+            ) : (
+              <></>
+            )}
+          </li>
+          <li>
+            {userRole === "admin" ? (
+              <Link
+                to="/adminDashboard"
+                className="text-primary font-bold hover:text-black"
+              >
+                <div className="indicator">Dashboard</div>
+              </Link>
+            ) : (
+              <></>
+            )}
+          </li>
+          <li>
+            {user ? (
+              <button
+                onClick={logout}
+                className="text-primary font-bold hover:text-black pr-7"
+              >
+                <div className="indicator">Signout</div>
+              </button>
+            ) : (
+              <Link to="/login">
+                <button className="text-primary font-bold hover:text-black pr-7">
+                  <div className="indicator">Login</div>
+                </button>
+              </Link>
+            )}
+          </li>
+        </ul>
       </div>
     </div>
   );

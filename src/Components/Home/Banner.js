@@ -1,23 +1,48 @@
-import React from "react";
-import banner6 from "../../images/banner/banner7.png";
+import React, { useState, useEffect } from "react";
+import banner1 from "../../images/banner/1.jpg";
+import banner2 from "../../images/banner/2.jpg";
+import banner3 from "../../images/banner/3.jpg";
+import banner4 from "../../images/banner/4.jpg";
+const images = [banner1, banner2, banner3, banner4];
 
 const Banner = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2500);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
-    <div
-      className="h-52"
-      style={{
-        background: `url(${banner6})`,
-        backgroundSize: "cover",
-      }}
-    >
-      <h1
+    <div className="relative h-[66vh]">
+      <div className="absolute inset-0 transition-opacity duration-1000">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Banner ${index + 1}`}
+            className={`w-full h-full object-cover absolute top-0 left-0 opacity-${
+              index === currentIndex ? 100 : 0
+            } transition-opacity duration-1000`}
+          />
+        ))}
+      </div>
+      <div
         style={{ fontFamily: "rockwell" }}
-        className="text-4xl font-bold text-center text-primary pt-20"
+        className="absolute inset-0 flex flex-col items-center justify-center text-white text-center"
       >
-        Every Piece Tells a Story
-        <br />
-        Discover Handcrafted Art
-      </h1>
+        <h1 className="text-4xl font-bold mb-4 text-shadow">
+          Every Piece Tells a Story
+        </h1>
+        <h2 className="text-2xl text-shadow">Discover Handcrafted Art</h2>
+      </div>
     </div>
   );
 };

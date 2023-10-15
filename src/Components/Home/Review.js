@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import banner1 from "../../images/banner/review.png";
+import banner1 from "../../images/banner/reviewPg.png";
+import reviewerImage from "../../images/banner/avatar.png";
 
 const reviews = [
   {
@@ -44,46 +45,66 @@ const Review = () => {
   };
 
   return (
-    <div className="mt-20">
-      <h1 className="text-2xl font-bold text-primary text-center my-12">
-        Customer Reviews
+    <div>
+      <h1
+        style={{ fontFamily: "rockwell" }}
+        className="text-4xl mt-16 text-center text-primary font-bold text-shadow"
+      >
+        REVIEWS
       </h1>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1">
-        {reviews.map((review, index) => (
-          <div
-            style={{
-              background: `url(${banner1})`,
-              backgroundSize: "cover",
-            }}
-            key={index}
-            className="mx-7 p-12 bg-gray-100 rounded-lg w-80"
-          >
-            <h2 className="text-lg text-primary font-extrabold">
-              {review.reviewerName}
-            </h2>
-            <p className="text-sm text-primary font-bold">
-              Rating: {review.rating} stars
-            </p>
-            <p className="text-sm text-primary font-bold">
-              Review Date: {review.reviewDate}
-            </p>
-            <p className="text-sm text-gray-600 font-bold text-justify mt-2">
-              {
-                expandedReviews.includes(index)
-                  ? review.reviewText // Show the full review if expanded
-                  : review.reviewText.slice(0, 70) + "..." // Show a truncated review
-              }
-            </p>
-            <div className="flex justify-end">
-              <button
-                className="text-primary font-semibold underline"
-                onClick={() => toggleReviewExpansion(index)}
-              >
-                {expandedReviews.includes(index) ? "Read Less" : "Read More"}
-              </button>
-            </div>
+      <div className="mt-8 grid lg:grid-cols-2 gap-12">
+        <div className="lg:col-span-1">
+          <div className="w-full h-80 bg-primary lg:mt-40 lg:mx-12 p-4 rounded-lg shadow-lg">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/Ow5LeG-zzyg?si=XorvdGslEbpvd7nt"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            "
           </div>
-        ))}
+        </div>
+        <div className="grid lg:grid-cols-2 md:grid-cols-3 m-7 gap-6">
+          {reviews.map((review, index) => (
+            <div
+              key={index}
+              className="relative bg-white rounded-lg shadow-lg p-6"
+            >
+              <div className="flex items-center mb-4">
+                <img
+                  src={reviewerImage}
+                  alt={review.reviewerName}
+                  className="w-12 h-12 rounded-full mr-4"
+                />
+                <h2 className="text-lg text-primary font-extrabold">
+                  {review.reviewerName}
+                </h2>
+              </div>
+              <p className="text-sm text-primary font-bold">
+                Rating: {review.rating} stars
+              </p>
+              <p className="text-sm text-primary font-bold">
+                Review Date: {review.reviewDate}
+              </p>
+              <p className="text-sm text-gray-600 text-justify mt-2">
+                {expandedReviews.includes(index)
+                  ? review.reviewText
+                  : review.reviewText.slice(0, 120) + " ..."}
+              </p>
+              <div className="flex justify-end mt-4">
+                <button
+                  className="text-primary font-semibold underline"
+                  onClick={() => toggleReviewExpansion(index)}
+                >
+                  {expandedReviews.includes(index) ? "Read Less" : "Read More"}
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
