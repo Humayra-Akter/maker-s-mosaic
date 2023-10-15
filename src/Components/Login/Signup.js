@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import {
@@ -19,7 +19,7 @@ const Signup = () => {
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
   const navigate = useNavigate();
   let signInError;
-
+  const [isTermsChecked, setTermsChecked] = useState(false);
   const imageStorageKey = "81a2b36646ff008b714220192e61707d";
 
   if (loading || updating) {
@@ -35,8 +35,12 @@ const Signup = () => {
   }
 
   const handleSignup = async (data) => {
-    await createUserWithEmailAndPassword(data.email, data.password);
-    console.log(data);
+    if (isTermsChecked) {
+      await createUserWithEmailAndPassword(data.email, data.password);
+      console.log(data);
+    } else {
+      alert("Please accept the terms and conditions to sign up.");
+    }
     // const image = data.image[0];
     // const formData = new FormData();
     // formData.append("image", image);
@@ -352,11 +356,30 @@ const Signup = () => {
                 </div>
               </div>
               {signInError}
+              <div className="form-control w-full mt-2">
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  {...register("terms", {
+                    required: "You must accept the terms and conditions.",
+                  })}
+                  checked={isTermsChecked}
+                  onChange={() => setTermsChecked(!isTermsChecked)}
+                />
+                <label className="text-xs text-primary">
+                  I agree to the terms and conditions
+                </label>
+              </div>
               <div className="flex justify-center items-center">
                 <input
-                  className="btn btn-sm text-sm w-1/3 border-secondary text-white font-bold bg-primary hover:bg-secondary"
-                  value="signup"
+                  className={`btn btn-sm text-sm w-1/3 border-secondary text-white font-bold ${
+                    isTermsChecked
+                      ? "bg-primary hover:bg-secondary"
+                      : "bg-gray-400 cursor-not-allowed"
+                  }`}
+                  value="Signup"
                   type="submit"
+                  disabled={!isTermsChecked}
                 />
               </div>
             </form>
