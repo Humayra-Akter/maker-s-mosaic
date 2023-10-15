@@ -24,6 +24,7 @@ import BookingHistory from "./Components/UserDashboard/BookingHistory";
 import NotificationsCenter from "./Components/UserDashboard/NotificationsCenter";
 import { useEffect, useState } from "react";
 import RequireAuth from "./Components/Login/RequireAuth";
+import TermsAndConditions from "./Components/Login/TermsAndConditions";
 
 function App() {
   return (
@@ -32,11 +33,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/terms" element={<TermsAndConditions />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route
           path="/adminDashboard"
           element={
-            <RequireAuth>
+            <RequireAuth requiredRole="admin">
               <Dashboard />
             </RequireAuth>
           }

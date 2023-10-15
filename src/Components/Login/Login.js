@@ -64,7 +64,11 @@ const Login = () => {
       );
     }
     const userRole = localStorage.getItem("userRole");
-    navigate(`/${userRole}Dashboard`);
+    if (userRole === "user") {
+      navigate("/userDashboard");
+    } else if (userRole === "admin") {
+      navigate("/adminDashboard");
+    } else navigate("/");
   };
 
   return (

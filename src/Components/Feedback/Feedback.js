@@ -21,7 +21,7 @@ const Feedback = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="max-w-md w-full space-y-8 p-6 bg-white rounded-lg shadow-lg">
+      <div className="max-w-xl w-full space-y-8 p-6 bg-white rounded-lg lg:shadow-lg">
         <div>
           <h1
             style={{ fontFamily: "rockwell" }}

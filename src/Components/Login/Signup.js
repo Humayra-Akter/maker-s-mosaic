@@ -367,6 +367,12 @@ const Signup = () => {
                   onChange={() => setTermsChecked(!isTermsChecked)}
                 />
                 <label className="text-xs text-primary">
+                  <Link
+                    className="text-xs text-primary font-bold underline"
+                    to="/terms"
+                  >
+                    Terms and Conditions
+                  </Link>{" "}
                   I agree to the terms and conditions
                 </label>
               </div>
