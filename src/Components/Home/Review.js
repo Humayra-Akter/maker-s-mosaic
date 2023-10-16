@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import banner1 from "../../images/banner/reviewPg.png";
 import reviewerImage from "../../images/banner/avatar.png";
 
 const reviews = [

@@ -7,7 +7,6 @@ import Faq from "./Faq";
 import About from "../About/About";
 import NewsletterSignup from "./NewsletterSignup";
 import ContactUs from "./ContactUs";
-import FeaturedArtisans from "./FeaturedArtisans";
 import ScrollToTop from "./ScrollToTop";
 import Footer from "../Shared/Footer";
 
@@ -23,7 +22,6 @@ const Home = () => {
       <NewsletterSignup />
       <About />
       <ContactUs />
-      {/* <FeaturedArtisans /> */}
       <Footer />
     </div>
   );

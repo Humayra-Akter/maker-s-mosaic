@@ -4,7 +4,6 @@ import ItemRow from "./ItemRow";
 const Items = () => {
   const [page, setPage] = useState(1);
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   const itemsPerPage = 10;
 

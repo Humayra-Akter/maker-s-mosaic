@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
-import {
-  useCreateUserWithEmailAndPassword,
-  useUpdateProfile,
-} from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import Loading from "../Shared/Loading";
 
@@ -16,12 +12,11 @@ const AddAdmin = () => {
     formState: { errors },
   } = useForm();
 
-  const [createUserWithEmailAndPassword, user, loading, error] =
+  const [createUserWithEmailAndPassword, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
   const navigate = useNavigate();
   let signInError;
 
-  const imageStorageKey = "81a2b36646ff008b714220192e61707d";
   const [admins, setAdmins] = useState([]);
   useEffect(() => {
     fetch("/admin.json")

@@ -16,7 +16,6 @@ const ProductDetailPage = ({ details }) => {
     description,
     category,
   } = details;
-  const [gUser, loading, error] = useAuthState(auth);
 
   return (
     <div className="bg-transparent">

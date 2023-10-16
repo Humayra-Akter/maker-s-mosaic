@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Modal from "react-modal";
 import { useForm } from "react-hook-form";
 import ReactModal from "react-modal";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -11,7 +10,6 @@ const Order = () => {
   const storedSelectedItems = JSON.parse(localStorage.getItem("selectedItems"));
   const [selectedItems, setSelectedItems] = useState(storedSelectedItems || []);
   const {
-    register,
     handleSubmit,
     reset,
     formState: { errors },

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/Slices/CartSlice";
 import { toast } from "react-toastify";
-import frwrd from "../../images/banner/forward.png";
 
 const ProductCard = ({ product, setDetails }) => {
   const { id, images, title, price, description } = product;

@@ -22,7 +22,6 @@ import UserDashboard from "./Components/UserDashboard/UserDashboard";
 import DashboardPg from "./Components/UserDashboard/DashboardPg";
 import BookingHistory from "./Components/UserDashboard/BookingHistory";
 import NotificationsCenter from "./Components/UserDashboard/NotificationsCenter";
-import { useEffect, useState } from "react";
 import RequireAuth from "./Components/Login/RequireAuth";
 import TermsAndConditions from "./Components/Login/TermsAndConditions";
 
