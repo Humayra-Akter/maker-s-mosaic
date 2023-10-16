@@ -63,7 +63,7 @@ const ProductCard = ({ product, setDetails }) => {
             onClick={handleKnowMoreClick}
             className="btn btn-sm rounded-full absolute w-4 bottom-2 left-2 border-secondary text-white text-xs font-extrabold bg-primary "
           >
-            ↪   
+            ↪
           </label>
           <div className="flex justify-end p-2">
             <button

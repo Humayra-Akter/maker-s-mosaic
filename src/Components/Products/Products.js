@@ -62,7 +62,9 @@ const Products = () => {
       </div>
       <CategoryMenu />
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 p-11">
+      <div
+        className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 p-11"
+      >
         {currentProducts
           .filter((product) => {
             if (category === "All") {

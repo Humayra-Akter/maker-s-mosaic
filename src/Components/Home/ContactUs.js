@@ -3,7 +3,11 @@ import contactImage from "../../images/banner/1.jpg";
 
 const ContactUs = () => {
   return (
-    <div className="bg-gray-100 py-12">
+    <div
+      data-aos="zoom-in-down"
+      data-aos-duration="1000"
+      className="bg-gray-100 py-12"
+    >
       <div className="max-w-6xl mx-auto bg-accent shadow-lg rounded-lg p-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="md:order-2">

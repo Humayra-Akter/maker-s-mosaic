@@ -52,7 +52,11 @@ const Review = () => {
       >
         REVIEWS
       </h1>
-      <div className="mt-8 grid lg:grid-cols-2 gap-12">
+      <div
+        data-aos="fade-up-right"
+        data-aos-duration="2000"
+        className="mt-8 grid lg:grid-cols-2 gap-12"
+      >
         <div className="lg:col-span-1">
           <div className="w-full h-80 bg-primary lg:mt-40 lg:mx-12 p-4 rounded-lg shadow-lg">
             <iframe
@@ -67,7 +71,11 @@ const Review = () => {
             "
           </div>
         </div>
-        <div className="grid lg:grid-cols-2 md:grid-cols-3 m-7 gap-6">
+        <div
+          data-aos="fade-up-left"
+          data-aos-duration="2000"
+          className="grid lg:grid-cols-2 md:grid-cols-3 m-7 gap-6"
+        >
           {reviews.map((review, index) => (
             <div
               key={index}

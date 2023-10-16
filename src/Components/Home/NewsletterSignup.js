@@ -9,14 +9,16 @@ const NewsletterSignup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add your logic for handling the form submission (e.g., sending the email to your server).
     console.log(`Subscribed with email: ${email}`);
-    // Optionally, you can clear the input field after submission
     setEmail("");
   };
 
   return (
-    <div className="bg-primary py-8 mt-16 text-white">
+    <div
+      data-aos="zoom-in-left"
+      data-aos-duration="1000"
+      className="bg-primary py-8 mt-16 text-white"
+    >
       <div className="container mx-auto text-center">
         <h2 className="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
         <p className="text-sm mb-4">
@@ -27,7 +29,7 @@ const NewsletterSignup = () => {
             <input
               type="email"
               placeholder="Your Email Address"
-              className="rounded-l p-2 text-black outline-none" // Changed text color to black
+              className="rounded-l p-2 text-black outline-none"
               value={email}
               onChange={handleEmailChange}
             />

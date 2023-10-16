@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import { ToastContainer, toast } from "react-toastify";
 
 const UserDashboard = () => {
   const [user] = useAuthState(auth);
   const [loggedUser, setLoggedUser] = useState([]);
+  const [isEditing, setIsEditing] = useState(false);
+  const [editedUserData, setEditedUserData] = useState({});
+  const [toastId, setToastId] = useState(null);
 
   useEffect(() => {
     if (user) {
@@ -24,6 +28,31 @@ const UserDashboard = () => {
   }, [user]);
   console.log(loggedUser);
 
+  const handleEditClick = () => {
+    setIsEditing(true);
+    setEditedUserData(loggedUser);
+  };
+
+  const handleSaveClick = () => {
+    setToastId(
+      toast("Updated", {
+        type: toast.TYPE.SUCCESS,
+      })
+    );
+    setIsEditing(false);
+  };
+
+  const handleCancelClick = () => {
+    setIsEditing(false);
+    setEditedUserData(loggedUser);
+  };
+
+  const handleSubmit = () => {
+    toast("Data saved successfully", {
+      type: toast.TYPE.SUCCESS,
+    });
+  };
+
   return (
     <div className="bg-gray-100 min-h-screen p-4">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
@@ -33,6 +62,23 @@ const UserDashboard = () => {
         >
           User Dashboard
         </h1>
+
+        <div className="flex justify-center items-center mt-5">
+          <button
+            className="btn btn-sm text-xs border-secondary text-accent font-bold bg-primary mx-4"
+            onClick={isEditing ? handleSaveClick : handleEditClick}
+          >
+            {isEditing ? "Save" : "Update"}
+          </button>
+          {isEditing && (
+            <button
+              onClick={handleCancelClick}
+              className="btn btn-sm text-xs border-secondary text-accent font-bold bg-primary mx-4"
+            >
+              Cancel
+            </button>
+          )}
+        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         <div className="bg-white shadow-lg p-6 rounded-lg">
@@ -76,6 +122,131 @@ const UserDashboard = () => {
           <p className="text-primary mt-4">Status: {loggedUser?.status}</p>
         </div>
       </div>
+      {isEditing && (
+        <div className="lg:max-w-6xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-4">
+          {/* Update Form */}
+          <form onSubmit={handleSubmit}>
+            {/* name field */}
+            <div className="grid lg:grid-cols-2 gap-5">
+              <div className="form-control w-full">
+                <label className="label">
+                  <span className="label-text text-primary font-bold text-md">
+                    Name
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  name="name"
+                  value={editedUserData.name}
+                  onChange={(e) =>
+                    setEditedUserData({
+                      ...editedUserData,
+                      name: e.target.value,
+                    })
+                  }
+                  className="input input-sm input-bordered w-full "
+                />
+              </div>
+              {/* email field */}
+              <div className="form-control w-full">
+                <label className="label">
+                  <span className="label-text text-primary font-bold text-md">
+                    Email
+                  </span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  name="email"
+                  value={editedUserData.email}
+                  onChange={(e) =>
+                    setEditedUserData({
+                      ...editedUserData,
+                      email: e.target.value,
+                    })
+                  }
+                  className="input input-sm input-bordered w-full "
+                />
+              </div>
+            </div>
+            <div className="grid lg:grid-cols-2 gap-5">
+              {/* Address */}
+              <div className="form-control w-full">
+                <label className="label">
+                  <span className="label-text text-primary font-bold text-md">
+                    Address
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Your Address"
+                  name="address"
+                  value={editedUserData.address}
+                  onChange={(e) =>
+                    setEditedUserData({
+                      ...editedUserData,
+                      address: e.target.value,
+                    })
+                  }
+                  className="input input-sm input-bordered w-full "
+                />
+              </div>
+              {/* Phone */}
+              <div className="form-control w-full">
+                <label className="label">
+                  <span className="label-text text-primary font-bold text-md">
+                    Phone
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Your phone"
+                  name="phone"
+                  value={editedUserData.phone}
+                  onChange={(e) =>
+                    setEditedUserData({
+                      ...editedUserData,
+                      phone: e.target.value,
+                    })
+                  }
+                  className="input input-sm input-bordered w-full "
+                />
+              </div>
+            </div>
+            {/* Image upload field */}
+            <div className="form-control  w-full">
+              <label className="label">
+                <span className="label-text text-primary font-bold text-md">
+                  Update your Image
+                </span>
+              </label>
+              <input
+                type="file"
+                placeholder="Your image"
+                name="image"
+                className="input input-sm input-bordered w-full"
+              />
+            </div>{" "}
+            <div className="flex justify-center items-center">
+              <input
+                className="btn btn-sm text-xs w-1/6 mt-5 border-secondary text-accent font-bold bg-primary"
+                value="LOGIN"
+                type="submit"
+              />
+            </div>
+          </form>
+        </div>
+      )}
+      <ToastContainer
+        position={toast.POSITION.TOP_RIGHT}
+        autoClose={3000}
+        closeOnClick={true}
+        hideProgressBar={false}
+        draggable={true}
+        pauseOnHover={true}
+        toastId={toastId}
+      />
     </div>
   );
 };

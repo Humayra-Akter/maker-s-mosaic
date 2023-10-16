@@ -12,6 +12,7 @@ const Signup = () => {
   const {
     register,
     handleSubmit,
+    getValues,
     formState: { errors },
   } = useForm();
   const [createUserWithEmailAndPassword, user, loading, error] =
@@ -20,10 +21,9 @@ const Signup = () => {
   const navigate = useNavigate();
   let signInError;
   const [isTermsChecked, setTermsChecked] = useState(false);
-  const imageStorageKey = "81a2b36646ff008b714220192e61707d";
 
   if (loading || updating) {
-    return <Loading></Loading>;
+    return <Loading />;
   }
 
   if (error || updateError) {
@@ -36,11 +36,29 @@ const Signup = () => {
 
   const handleSignup = async (data) => {
     if (isTermsChecked) {
-      await createUserWithEmailAndPassword(data.email, data.password);
-      console.log(data);
+      try {
+        const authUser = await createUserWithEmailAndPassword(
+          data.email,
+          data.password
+        );
+
+        // Update user profile (example: display name)
+        await updateProfile(authUser.user, {
+          displayName: data.name,
+        });
+
+        // Continue with any additional user data handling, like saving to a database
+        console.log("User registered:", authUser.user);
+
+        // Redirect to another page after signup
+        navigate("/dashboard");
+      } catch (error) {
+        console.error("Error during signup:", error);
+      }
     } else {
       alert("Please accept the terms and conditions to sign up.");
     }
+
     // const image = data.image[0];
     // const formData = new FormData();
     // formData.append("image", image);
@@ -293,15 +311,15 @@ const Signup = () => {
                     type="password"
                     placeholder="Password"
                     name="password"
-                    className="input input-sm input-bordered w-full "
+                    className="input input-sm input-bordered w-full"
                     {...register("password", {
                       required: {
                         value: true,
-                        message: "password is required",
+                        message: "Password is required",
                       },
                       minLength: {
                         value: 6,
-                        message: "Must be 6 characters longer",
+                        message: "Must be 6 characters or longer",
                       },
                     })}
                   />
@@ -318,7 +336,8 @@ const Signup = () => {
                     )}
                   </label>
                 </div>
-                {/* Password field */}
+
+                {/* Confirm Password field */}
                 <div className="form-control w-full pb-11">
                   <label className="label">
                     <span className="label-text text-primary font-bold text-md">
@@ -327,29 +346,28 @@ const Signup = () => {
                   </label>
                   <input
                     type="password"
-                    placeholder="Password"
-                    name="password"
-                    className="input input-sm input-bordered w-full "
-                    {...register("password", {
+                    placeholder="Confirm Password"
+                    name="confirmPassword"
+                    className="input input-sm input-bordered w-full"
+                    {...register("confirmPassword", {
                       required: {
                         value: true,
-                        message: "password is required",
+                        message: "Password confirmation is required",
                       },
-                      minLength: {
-                        value: 6,
-                        message: "Must be 6 characters longer",
-                      },
+                      validate: (value) =>
+                        value === getValues("password") ||
+                        "Passwords do not match", // Check if it matches the "password" field
                     })}
                   />
                   <label>
-                    {errors.password?.type === "required" && (
+                    {errors.confirmPassword?.type === "required" && (
                       <span className="text-red-500 text-xs mt-1">
-                        {errors.password.message}
+                        {errors.confirmPassword.message}
                       </span>
                     )}
-                    {errors.password?.type === "minLength" && (
+                    {errors.confirmPassword?.type === "validate" && (
                       <span className="text-red-500 text-xs mt-1">
-                        {errors.password.message}
+                        {errors.confirmPassword.message}
                       </span>
                     )}
                   </label>
