@@ -1,22 +1,30 @@
 import React, { useEffect } from "react";
-import category1 from "../../images/banner/1.jpg";
+import category1 from "../../images/banner/1.png";
 import category2 from "../../images/banner/2.jpg";
 import category3 from "../../images/banner/3.jpg";
 import category4 from "../../images/banner/4.jpg";
-import category5 from "../../images/banner/5.jpg";
-import category6 from "../../images/banner/6.jpg";
+import category5 from "../../images/banner/5.png";
+import category6 from "../../images/banner/6.png";
+import category7 from "../../images/banner/7.png";
+import category8 from "../../images/banner/8.png";
+import category9 from "../../images/banner/9.png";
+import category10 from "../../images/banner/10.jpg";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 const ProductCategories = () => {
   const categories = [
-    { image: category1, title: "Handmade crafts" },
-    { image: category2, title: "Home Decor Crafts" },
-    { image: category3, title: "Bamboo Art" },
-    { image: category4, title: "Pottery Art" },
-    { image: category5, title: "Textile Art" },
-    { image: category6, title: "Candles Art" },
+    { image: category1, title: "Device and Equipments" },
+    { image: category2, title: "Heart Health" },
+    { image: category3, title: "Diabetic Care" },
+    { image: category4, title: "Women Care" },
+    { image: category5, title: "Eye Care" },
+    { image: category6, title: "Baby Care" },
+    { image: category7, title: "Men Care" },
+    { image: category8, title: "Skin Care" },
+    { image: category9, title: "Digestive Health" },
+    { image: category10, title: "Dental Care" },
   ];
 
   const [hoveredCategory, setHoveredCategory] = React.useState(null);
@@ -30,11 +38,11 @@ const ProductCategories = () => {
       data-aos-duration="2000"
       className="bg-accent py-16 text-white"
     >
-      <h1 className="text-3xl font-bold text-primary text-center mb-10">
-        Product Categories
+      <h1 className="text-2xl uppercase font-bold text-primary text-center mb-10">
+        Shop by categories
       </h1>
 
-      <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-3 justify-center items-center">
+      <div className="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-3 justify-center items-center">
         {categories.map((category, index) => (
           <div
             key={index}
@@ -49,9 +57,7 @@ const ProductCategories = () => {
               alt={category.title}
               className=" w-56 h-36 rounded-lg"
             />
-            <div
-              className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center transition-opacity duration-300 opacity-0 hover:opacity-100"
-            >
+            <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center transition-opacity duration-300 opacity-0 hover:opacity-100">
               <h2 className="text-2xl font-semibold">
                 {hoveredCategory?.title}
               </h2>

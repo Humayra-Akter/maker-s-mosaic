@@ -4,7 +4,7 @@ import { addToCart } from "../../redux/Slices/CartSlice";
 import { toast } from "react-toastify";
 
 const ProductCard = ({ product, setDetails }) => {
-  const { id, images, title, price, description } = product;
+  const { id, img, title, price, description } = product;
   const [productDetail, setProductDetail] = useState([]);
 
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -34,7 +34,7 @@ const ProductCard = ({ product, setDetails }) => {
           <div className="flex">
             <figure className="top-3 left-3 right-0 h-full">
               <img
-                src={images}
+                src={img}
                 alt="handcraft"
                 className="w-24 h-24 rounded-full border-2 border-primary shadow-md"
               />
@@ -67,7 +67,7 @@ const ProductCard = ({ product, setDetails }) => {
           <div className="flex justify-end p-2">
             <button
               onClick={() => {
-                dispatch(addToCart({ id, images, title, price, qty: 1 }));
+                dispatch(addToCart({ id, img, title, price, qty: 1 }));
                 notify();
               }}
               className="px-4 btn-sm mt-3 bg-primary text-white font-bold rounded-full hover:bg-opacity-80 transition duration-300"

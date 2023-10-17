@@ -7,7 +7,7 @@ const CategoryMenu = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch("service.json")
+    fetch("http://localhost:5000/medicine")
       .then((res) => res.json())
       .then((data) => {
         const uniqueCategories = [
@@ -21,11 +21,9 @@ const CategoryMenu = () => {
   return (
     <div className="ml-6">
       <h3 className="text-xl text-center text-primary mt-16 font-semibold">
-        Find According to your choice
+        Find According to Category
       </h3>
-      <p className="text-xs text-center text-secondary mt-1 font-semibold">
-        searched items are based on page you are using
-      </p>
+
       <div className="my-5 flex justify-center items-center gap-3 overflow-x-scroll scroll-smooth lg:overflow-x-hidden">
         <button
           onClick={() => dispatch(setCategory("All"))}

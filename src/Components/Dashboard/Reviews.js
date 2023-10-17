@@ -79,11 +79,11 @@ const Reviews = () => {
               </th>
             </tr>
           </thead>
-          <tbody>
+          {/* <tbody>
             {reviewsToDisplay.map((review) => (
               <ReviewRow key={review.id} review={review} />
             ))}
-          </tbody>
+          </tbody> */}
         </table>
         <button className="btn btn-primary mt-16 btn-sm drawer-button lg:hidden">
           Slide to see

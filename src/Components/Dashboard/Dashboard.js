@@ -10,10 +10,6 @@ import ban4 from "../../images/banner/add-user.png";
 const Dashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-
   return (
     <div>
       <div className={`drawer ${isSidebarOpen ? "lg:drawer-open" : ""}`}>
@@ -31,21 +27,6 @@ const Dashboard = () => {
           >
             open drawer
           </label>
-          {isSidebarOpen ? (
-            <button
-              className="btn absolute rounded-full top-2 left-2 z-10 btn-secondary btn-sm"
-              onClick={toggleSidebar}
-            >
-              <img className="w-4" src={rewrd} alt="" />
-            </button>
-          ) : (
-            <button
-              className="btn absolute top-0 rounded-full left-0 btn-secondary btn-sm"
-              onClick={toggleSidebar}
-            >
-              <img className="w-4" src={frwrd} alt="" />
-            </button>
-          )}
         </div>
         <div className="drawer-side">
           <label
@@ -64,7 +45,7 @@ const Dashboard = () => {
                 Admin Dashboard
               </span>
             </Link>
-            <Link
+            {/* <Link
               className="text-primary mx-8 text-lg mb-4 font-bold hover:text-black "
               to="/adminDashboard/addAdmin"
             >
@@ -72,7 +53,7 @@ const Dashboard = () => {
                 <img className="w-6" src={ban1} alt="" />
                 Add Admin
               </span>
-            </Link>{" "}
+            </Link>{" "} */}
             <Link
               className="text-primary mx-8 text-lg mb-4 font-bold hover:text-black "
               to="/adminDashboard/addItem"

@@ -15,7 +15,7 @@ const Products = () => {
   const search = useSelector((state) => state.search.search);
 
   useEffect(() => {
-    fetch("service.json")
+    fetch("http://localhost:5000/medicine")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -44,7 +44,8 @@ const Products = () => {
         className="text-3xl pt-12 text-center font-black text-primary px-7"
         style={{ fontFamily: "arial" }}
       >
-        Discover, Create, Celebrate <br /> The Maker's Mosaic Way
+        Discover essential healthcare solutions
+        <br /> through our diverse medicine categories
       </h1>
 
       <div className="mb-4 mr-20 text-right">
@@ -62,9 +63,7 @@ const Products = () => {
       </div>
       <CategoryMenu />
 
-      <div
-        className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 p-11"
-      >
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 p-11">
         {currentProducts
           .filter((product) => {
             if (category === "All") {

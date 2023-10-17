@@ -4,7 +4,7 @@ const ItemRow = ({ product }) => {
   return (
     <tr>
       <td className="uppercase text-lg font-bold py-2 text-left">
-        {product.id}
+        {product.index}
       </td>
       <td className="font-semibold">{product.title}</td>
       <td className="font-semibold">{product.category}</td>
@@ -13,8 +13,10 @@ const ItemRow = ({ product }) => {
         {product.currency}
       </td>
       <td className="font-semibold">{product.quantity}</td>
-      <td className="font-semibold">{product?.seller?.name}</td>
-      <td className="font-semibold">{product?.shippingInfo?.deliveryTime}</td>
+      <td className="font-semibold">
+        <img className="w-6" src={product?.img} alt="" />
+      </td>
+      <td className="font-semibold">{product?.deliveryTime}</td>
     </tr>
   );
 };

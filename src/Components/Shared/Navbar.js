@@ -19,13 +19,13 @@ const Navbar = () => {
   const userRole = localStorage.getItem("userRole");
 
   return (
-    <div className="navbar bg-neutral">
+    <div className="navbar bg-primary">
       <div className="flex-1">
         <Link
-          className="btn btn-ghost font-bold normal-case text-primary text-xl"
+          className="btn btn-ghost font-bold normal-case text-base-100 text-xl"
           to="/"
         >
-          Maker's Mosaic
+          Pharma Buddy
         </Link>
       </div>
 
@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="hidden lg:flex">
         {userRole === "admin" && (
           <Link
-            className="mx-3 font-extrabold normal-case text-primary hover-text-secondary text-md"
+            className="mx-3 font-extrabold normal-case text-base-100 hover-text-secondary text-md"
             to="/adminDashboard"
           >
             DASHBOARD
@@ -41,7 +41,7 @@ const Navbar = () => {
         )}
         {userRole === "user" && (
           <Link
-            className="mx-3 font-extrabold normal-case text-primary hover-text-secondary text-md"
+            className="mx-3 font-extrabold normal-case text-base-100 hover-text-secondary text-md"
             to="/userDashboard"
           >
             USER-DASHBOARD
@@ -51,13 +51,13 @@ const Navbar = () => {
       {/* customer dashboard for large screens (lg) */}
       <div className="hidden lg:flex">
         <Link
-          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+          className="mx-3 font-extrabold normal-case text-base-100 hover:text-secondary text-md"
           to="/feedback"
         >
           FEEDBACK
         </Link>
         <Link
-          className="mx-3 font-extrabold normal-case text-primary hover:text-secondary text-md"
+          className="mx-3 font-extrabold normal-case text-base-100 hover:text-secondary text-md"
           to="/products"
         >
           PRODUCTS
@@ -85,12 +85,12 @@ const Navbar = () => {
         </label>
         <ul
           tabIndex={0}
-          className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+          className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-primary rounded-box w-52"
         >
           <li>
             <Link
               to="/products"
-              className="text-primary font-bold hover:text-black"
+              className="text-base-100 font-bold hover:text-black"
             >
               <div className="indicator">Products</div>
             </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/feedback"
-              className="text-primary font-bold hover:text-black"
+              className="text-base-100 font-bold hover:text-black"
             >
               <div className="indicator">Feedback</div>
             </Link>
@@ -107,7 +107,7 @@ const Navbar = () => {
             {userRole === "user" ? (
               <Link
                 to="/userDashboard"
-                className="text-primary font-bold hover:text-black"
+                className="text-base-100 font-bold hover:text-black"
               >
                 <div className="indicator">Profile</div>
               </Link>
@@ -119,7 +119,7 @@ const Navbar = () => {
             {userRole === "admin" ? (
               <Link
                 to="/adminDashboard"
-                className="text-primary font-bold hover:text-black"
+                className="text-base-100 font-bold hover:text-black"
               >
                 <div className="indicator">Dashboard</div>
               </Link>
@@ -131,13 +131,13 @@ const Navbar = () => {
             {user ? (
               <button
                 onClick={logout}
-                className="text-primary font-bold hover:text-black pr-7"
+                className="text-base-100 font-bold hover:text-black pr-7"
               >
                 <div className="indicator">Signout</div>
               </button>
             ) : (
               <Link to="/login">
-                <button className="text-primary font-bold hover:text-black pr-7">
+                <button className="text-base-100 font-bold hover:text-black pr-7">
                   <div className="indicator">Login</div>
                 </button>
               </Link>
@@ -155,13 +155,13 @@ const Navbar = () => {
         </label>
         <ul
           tabIndex={0}
-          className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+          className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-primary rounded-box w-52"
         >
           <li>
             {userRole === "user" ? (
               <Link
                 to="/userDashboard"
-                className="text-primary font-bold hover:text-black"
+                className="text-base-100 font-bold hover:text-black"
               >
                 <div className="indicator">Profile</div>
               </Link>
@@ -173,7 +173,7 @@ const Navbar = () => {
             {userRole === "admin" ? (
               <Link
                 to="/adminDashboard"
-                className="text-primary font-bold hover:text-black"
+                className="text-base-100 font-bold hover:text-black"
               >
                 <div className="indicator">Dashboard</div>
               </Link>
@@ -185,13 +185,13 @@ const Navbar = () => {
             {user ? (
               <button
                 onClick={logout}
-                className="text-primary font-bold hover:text-black pr-7"
+                className="text-base-100 font-bold hover:text-black pr-7"
               >
                 <div className="indicator">Signout</div>
               </button>
             ) : (
               <Link to="/login">
-                <button className="text-primary font-bold hover:text-black pr-7">
+                <button className="text-base-100 font-bold hover:text-black pr-7">
                   <div className="indicator">Login</div>
                 </button>
               </Link>

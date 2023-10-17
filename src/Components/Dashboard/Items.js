@@ -8,7 +8,7 @@ const Items = () => {
   const itemsPerPage = 10;
 
   useEffect(() => {
-    fetch("/service.json")
+    fetch("http://localhost:5000/medicine")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

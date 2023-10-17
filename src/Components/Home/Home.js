@@ -2,10 +2,7 @@ import React from "react";
 import Banner from "./Banner";
 import FeaturedProducts from "./FeaturedProducts";
 import ProductCategories from "./ProductCategories";
-import Review from "./Review";
-import Faq from "./Faq";
 import About from "../About/About";
-import NewsletterSignup from "./NewsletterSignup";
 import ContactUs from "./ContactUs";
 import ScrollToTop from "./ScrollToTop";
 import Footer from "../Shared/Footer";
@@ -15,11 +12,8 @@ const Home = () => {
     <div>
       <ScrollToTop />
       <Banner />
-      <FeaturedProducts />
       <ProductCategories />
-      <Review />
-      <Faq />
-      <NewsletterSignup />
+      <FeaturedProducts />
       <About />
       <ContactUs />
       <Footer />

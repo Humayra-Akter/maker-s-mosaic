@@ -115,11 +115,11 @@ const Users = () => {
                 </th>
               </tr>
             </thead>
-            <tbody>
+            {/* <tbody>
               {usersToDisplay.map((user) => (
                 <UserRow key={user.id} user={user}></UserRow>
               ))}
-            </tbody>
+            </tbody> */}
           </table>
           <button className="btn btn-primary mt-16 btn-sm drawer-button lg:hidden">
             Slide to see

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const AddItems = () => {
   const {
@@ -7,7 +8,7 @@ const AddItems = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-
+  const imageStorageKey = "ff702e3741c40ba98a1e3823b0fef1f3";
   const [item, setItem] = useState({
     id: "",
     title: "",
@@ -55,8 +56,58 @@ const AddItems = () => {
     });
   };
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const handleAddMedicine = async (data) => {
+    try {
+      const image = data.image[0];
+      const formData = new FormData();
+      formData.append("image", image);
+      const url = `https://api.imgbb.com/1/upload?key=${imageStorageKey}`;
+
+      const imgResponse = await fetch(url, {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!imgResponse.ok) {
+        throw new Error("Image upload failed");
+      }
+
+      const imgData = await imgResponse.json();
+
+      if (imgData.success) {
+        const medicine = {
+          title: data.title,
+          description: data.description,
+          img: imgData.data.url,
+          category: data.category,
+          price: data.price,
+          quantity: data.quantity,
+          rating: data.rating,
+          deliveryTime: data.deliveryTime,
+        };
+
+        // Save medicine information to the database
+        const response = await fetch("http://localhost:5000/medicine", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(medicine),
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          toast.success(`${data.title} added`);
+        } else {
+          throw new Error("Failed to save medicine");
+        }
+      } else {
+        throw new Error("Image upload failed");
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to add medicine");
+    }
   };
 
   return (
@@ -69,7 +120,7 @@ const AddItems = () => {
           >
             ADD <strong>Item</strong>
           </h1>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(handleAddMedicine)}>
             <div className="grid lg:grid-cols-3 gap-5">
               <div className="form-control w-full">
                 <label className="label">
@@ -177,32 +228,7 @@ const AddItems = () => {
                   )}
                 </label>
               </div>
-              <div className="form-control w-full">
-                <label className="label">
-                  <span className="label-text text-primary font-bold text-md">
-                    Currency
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="Product currency"
-                  name="currency"
-                  className="input input-sm input-bordered w-full"
-                  {...register("currency", {
-                    required: {
-                      value: true,
-                      message: "currency is required",
-                    },
-                  })}
-                />
-                <label>
-                  {errors.currency?.type === "required" && (
-                    <span className="text-red-500 text-xs mt-1">
-                      {errors.currency.message}
-                    </span>
-                  )}
-                </label>
-              </div>
+
               <div className="form-control w-full">
                 <label className="label">
                   <span className="label-text text-primary font-bold text-md">
@@ -229,34 +255,35 @@ const AddItems = () => {
                   )}
                 </label>
               </div>
-            </div>
-            {/* Image upload field */}
-            <div className="form-control  w-full">
-              <label className="label">
-                <span className="label-text text-primary font-bold text-md">
-                  Image
-                </span>
-              </label>
-              <input
-                type="file"
-                placeholder="Your image"
-                name="image"
-                className="input input-sm input-bordered w-full"
-                {...register("image", {
-                  required: {
-                    value: true,
-                    message: "image is required",
-                  },
-                })}
-              />
-              <label>
-                {errors.image?.type === "required" && (
-                  <span className="text-red-500 text-xs mt-1">
-                    {errors.image.message}
+              {/* Image upload field */}
+              <div className="form-control  w-full">
+                <label className="label">
+                  <span className="label-text text-primary font-bold text-md">
+                    Image
                   </span>
-                )}
-              </label>
+                </label>
+                <input
+                  type="file"
+                  placeholder="Your image"
+                  name="image"
+                  className="input input-sm input-bordered w-full"
+                  {...register("image", {
+                    required: {
+                      value: true,
+                      message: "image is required",
+                    },
+                  })}
+                />
+                <label>
+                  {errors.image?.type === "required" && (
+                    <span className="text-red-500 text-xs mt-1">
+                      {errors.image.message}
+                    </span>
+                  )}
+                </label>
+              </div>
             </div>
+
             <div className="grid lg:grid-cols-3 gap-5">
               <div className="form-control w-full">
                 <label className="label">
@@ -264,13 +291,18 @@ const AddItems = () => {
                     Seller Rating
                   </span>
                 </label>
-                <input
-                  type="number"
-                  placeholder="Seller rating"
-                  name="seller.rating"
-                  className="input input-sm input-bordered w-full"
-                  {...register("seller.rating")}
-                />
+                <select
+                  id="rating"
+                  name="rating"
+                  required
+                  className="px-4 py-1 w-full border rounded-md"
+                >
+                  <option value="5">5 - Excellent</option>
+                  <option value="4">4 - Very Good</option>
+                  <option value="3">3 - Good</option>
+                  <option value="2">2 - Fair</option>
+                  <option value="1">1 - Poor</option>
+                </select>
               </div>
               <div className="form-control w-full">
                 <label className="label">
@@ -281,30 +313,16 @@ const AddItems = () => {
                 <input
                   type="text"
                   placeholder="Delivery time"
-                  name="shippingInfo.deliveryTime"
+                  name="deliveryTime"
                   className="input input-sm input-bordered w-full"
-                  {...register("shippingInfo.deliveryTime")}
-                />
-              </div>
-              <div className="form-control w-full">
-                <label className="label">
-                  <span className="label-text text-primary font-bold text-md">
-                    Shipping Cost
-                  </span>
-                </label>
-                <input
-                  type="number"
-                  placeholder="Shipping cost"
-                  name="shippingInfo.shippingCost"
-                  className="input input-sm input-bordered w-full"
-                  {...register("shippingInfo.shippingCost")}
+                  {...register("deliveryTime")}
                 />
               </div>
             </div>
             <div className="form-control pt-5 w-full">
               <div className="flex justify-between">
                 <h2 className="label-text text-primary font-bold text-md">
-                  Attributes
+                  Pharmacy
                 </h2>
                 <button
                   type="button"
@@ -318,23 +336,12 @@ const AddItems = () => {
                 {item.attributes.map((attribute, index) => (
                   <div key={index} className="space-y-2">
                     <label className="block">
-                      Attribute Name
+                      Pharmacy Name
                       <input
                         type="text"
                         value={attribute.name}
                         onChange={(e) =>
                           handleAttributeChange(index, "name", e.target.value)
-                        }
-                        className="input input-sm input-bordered w-full"
-                      />
-                    </label>
-                    <label className="block">
-                      Attribute Value
-                      <input
-                        type="text"
-                        value={attribute.value}
-                        onChange={(e) =>
-                          handleAttributeChange(index, "value", e.target.value)
                         }
                         className="input input-sm input-bordered w-full"
                       />

@@ -1,12 +1,7 @@
-import React from 'react';
-import err from "../../images/banner/error.jpg";
+import React from "react";
 
 const Error = () => {
-    return (
-      <div>
-        <img className="h-screen w-full" src={err} alt=""></img>
-      </div>
-    );
+  return <div className="flex items-center justify-center text-6xl">u are on wrong site</div>;
 };
 
 export default Error;
