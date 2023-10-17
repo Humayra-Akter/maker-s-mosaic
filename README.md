@@ -27,3 +27,4 @@ Creating a handcraft website as it can serve as a platform for artisans and craf
 12. **Newsletter SignUp:** Allow users to subscribe to newsletters for updates on new products, promotions, and new product highlights.
 
 13. **Feedback and Improvement:** Include a feedback mechanism to collect suggestions and bug reports from users for continuous improvement.
+"# pharma-buddy" 
