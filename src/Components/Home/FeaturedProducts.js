@@ -43,16 +43,17 @@ const FeaturedProducts = () => {
       >
         <SwiperSlide className="hover:scale-105 transition-transform duration-300 ease-in-out">
           <div className="group relative">
-<<<<<<< HEAD
             <img className="w-96 h-56 rounded-lg" src={banner1} alt="" />
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 flex justify-center items-center">
               <div className="absolute inset-0 bg-black opacity-30"></div>
               <h1 className="text-xl font-semibold text-white">Art Prints</h1>
-=======
-            <img className="w-72 h-52 rounded-lg" src={banner1} alt="" />
-            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
-              <h1 className="text-xl font-semibold text-white">Constipation</h1>
->>>>>>> 34a121527a8cffb452c99a1f07888e7af786f76f
+
+              <img className="w-72 h-52 rounded-lg" src={banner1} alt="" />
+              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center">
+                <h1 className="text-xl font-semibold text-white">
+                  Constipation
+                </h1>
+              </div>
             </div>
           </div>
         </SwiperSlide>
@@ -60,13 +61,10 @@ const FeaturedProducts = () => {
           <div className="group relative">
             <img className="w-72 h-52 rounded-lg" src={banner2} alt="" />
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 flex justify-center items-center">
-<<<<<<< HEAD
               {" "}
               <div className="absolute inset-0 bg-black opacity-30"></div>
               <h1 className="text-xl font-semibold text-white">Home Decor</h1>
-=======
               <h1 className="text-xl font-semibold text-white">Cough & Flu</h1>
->>>>>>> 34a121527a8cffb452c99a1f07888e7af786f76f
             </div>
           </div>
         </SwiperSlide>
@@ -74,15 +72,12 @@ const FeaturedProducts = () => {
           <div className="group relative">
             <img className="w-72 h-52 rounded-lg" src={banner3} alt="" />
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 flex justify-center items-center">
-<<<<<<< HEAD
               {" "}
               <div className="absolute inset-0 bg-black opacity-30"></div>
               <h1 className="text-xl font-semibold text-white">
                 Bamboo Crafts
               </h1>
-=======
               <h1 className="text-xl font-semibold text-white">Diarrhea</h1>
->>>>>>> 34a121527a8cffb452c99a1f07888e7af786f76f
             </div>
           </div>
         </SwiperSlide>
@@ -90,15 +85,12 @@ const FeaturedProducts = () => {
           <div className="group relative">
             <img className="w-72 h-52 rounded-lg" src={banner4} alt="" />
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 flex justify-center items-center">
-<<<<<<< HEAD
               {" "}
               <div className="absolute inset-0 bg-black opacity-30"></div>
               <h1 className="text-xl font-semibold text-white">
                 Pottery Ceramics
               </h1>
-=======
               <h1 className="text-xl font-semibold text-white">Eczema</h1>
->>>>>>> 34a121527a8cffb452c99a1f07888e7af786f76f
             </div>
           </div>
         </SwiperSlide>
@@ -106,13 +98,10 @@ const FeaturedProducts = () => {
           <div className="group relative">
             <img className="w-72 h-52 rounded-lg" src={banner5} alt="" />
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 flex justify-center items-center">
-<<<<<<< HEAD
               {" "}
               <div className="absolute inset-0 bg-black opacity-30"></div>
               <h1 className="text-xl font-semibold text-white">Textiles</h1>
-=======
               <h1 className="text-xl font-semibold text-white">Fever</h1>
->>>>>>> 34a121527a8cffb452c99a1f07888e7af786f76f
             </div>
           </div>
         </SwiperSlide>
@@ -120,13 +109,10 @@ const FeaturedProducts = () => {
           <div className="group relative">
             <img className="w-72 h-52 rounded-lg" src={banner6} alt="" />
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 flex justify-center items-center">
-<<<<<<< HEAD
               {" "}
               <div className="absolute inset-0 bg-black opacity-30"></div>
               <h1 className="text-xl font-semibold text-white">Candles</h1>
-=======
               <h1 className="text-xl font-semibold text-white">Gastric</h1>
->>>>>>> 34a121527a8cffb452c99a1f07888e7af786f76f
             </div>
           </div>
         </SwiperSlide>
@@ -134,11 +120,9 @@ const FeaturedProducts = () => {
           <div className="group relative">
             <img className="w-72 h-52 rounded-lg" src={banner7} alt="" />
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 flex justify-center items-center">
-<<<<<<< HEAD
               {" "}
               <div className="absolute inset-0 bg-black opacity-30"></div>
               <h1 className="text-xl font-semibold text-white">Glasswork</h1>
-=======
               <h1 className="text-xl font-semibold text-white">Headache</h1>
             </div>
           </div>
@@ -164,7 +148,6 @@ const FeaturedProducts = () => {
             <img className="w-72 h-52 rounded-lg" src={banner10} alt="" />
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 flex justify-center items-center">
               <h1 className="text-xl font-semibold text-white">Vitamins</h1>
->>>>>>> 34a121527a8cffb452c99a1f07888e7af786f76f
             </div>
           </div>
         </SwiperSlide>

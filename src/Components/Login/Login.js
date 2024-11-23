@@ -235,7 +235,6 @@ const Login = () => {
                     </p>
                   </form>
                 </div>
-<<<<<<< HEAD
                 <p className="text-left">
                   <small className="font-semibold">
                     <Link className="text-primary" to="/register">
@@ -266,15 +265,7 @@ const Login = () => {
                     </Link>
                   </small>
                 </p>
-                <br />
-                <hr />
-                <div className="flex justify-center items-center">or</div>
-                <hr />
-                <br />
-              </form>
-=======
               </div>
->>>>>>> 34a121527a8cffb452c99a1f07888e7af786f76f
             </div>
           </div>
         </div>

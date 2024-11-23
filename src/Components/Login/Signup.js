@@ -437,7 +437,6 @@ const Signup = () => {
                   </div>
                 </form>
               </div>
-<<<<<<< HEAD
               {signInError}
               <div className="flex justify-center items-center">
                 <button
@@ -479,10 +478,7 @@ const Signup = () => {
                   disabled={!isTermsChecked}
                 />
               </div>
-            </form>
-=======
             </div>
->>>>>>> 34a121527a8cffb452c99a1f07888e7af786f76f
             <p className="text-center">
               <small className="font-semibold">
                 Already have an account at "Pharma-buddy"?
