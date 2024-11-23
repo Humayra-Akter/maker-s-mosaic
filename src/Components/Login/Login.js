@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import Loading from "../Shared/Loading";
 import auth from "../../firebase.init";
@@ -17,6 +18,7 @@ const Login = () => {
   const [loggedUser, setLoggedUser] = useState([]);
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+  const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
   const [selectedRole, setSelectedRole] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
 
@@ -51,7 +53,7 @@ const Login = () => {
     const matchingUser = loggedUser.find(
       (sysUser) => sysUser.email === data.email && sysUser.role === data.role
     );
-    console.log(data);
+    console.log(data.role);
     if (matchingUser) {
       signInWithEmailAndPassword(data.email, data.password);
       localStorage.setItem("userRole", data.role);
@@ -215,6 +217,14 @@ const Login = () => {
                   </small>
                 </p>
                 {signInError}
+                <div className="flex justify-center items-center">
+                  <button
+                    onClick={() => signInWithGoogle()}
+                    className="btn btn-sm text-xs w-full border-secondary text-accent font-bold bg-primary"
+                  >
+                    <span>Sign in with Google</span>
+                  </button>
+                </div>
                 <input
                   className="btn btn-sm text-xs w-full border-secondary text-accent font-bold bg-primary"
                   value="LOGIN"
@@ -229,6 +239,11 @@ const Login = () => {
                     </Link>
                   </small>
                 </p>
+                <br />
+                <hr />
+                <div className="flex justify-center items-center">or</div>
+                <hr />
+                <br />
               </form>
             </div>
           </div>

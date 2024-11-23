@@ -5,6 +5,7 @@ import {
   useCreateUserWithEmailAndPassword,
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import Loading from "../Shared/Loading";
 
@@ -17,6 +18,7 @@ const Signup = () => {
   } = useForm();
   const [createUserWithEmailAndPassword, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
+  const [signInWithGoogle, user, gloading, gerror] = useSignInWithGoogle(auth);
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
   const navigate = useNavigate();
   let signInError;
@@ -374,6 +376,14 @@ const Signup = () => {
                 </div>
               </div>
               {signInError}
+              <div className="flex justify-center items-center">
+                <button
+                  onClick={() => signInWithGoogle()}
+                  className="bg-primary hover:bg-secondary btn btn-sm text-sm w-1/3 border-secondary text-white font-bold mt-4"
+                >
+                  <span>Sign in with Google</span>
+                </button>
+              </div>
               <div className="form-control w-full mt-2">
                 <input
                   type="checkbox"
