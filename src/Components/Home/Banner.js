@@ -33,6 +33,7 @@ const Banner = () => {
             } transition-opacity duration-1000`}
           />
         ))}
+        <div className="absolute inset-0 bg-black opacity-60"></div>
       </div>
       <div
         style={{ fontFamily: "rockwell" }}

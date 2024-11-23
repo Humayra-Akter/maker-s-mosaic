@@ -15,6 +15,7 @@ const StackedCards = ({ artisans }) => {
             key={index}
             className={`avatar ${index === currentCard ? "" : "hidden"}`}
           >
+            {" "}
             <div className="w-48 h-48 overflow-hidden" onClick={nextCard}>
               <img
                 src={artisan.image}

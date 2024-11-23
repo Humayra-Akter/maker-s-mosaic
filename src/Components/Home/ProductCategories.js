@@ -49,9 +49,7 @@ const ProductCategories = () => {
               alt={category.title}
               className=" w-56 h-36 rounded-lg"
             />
-            <div
-              className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center transition-opacity duration-300 opacity-0 hover:opacity-100"
-            >
+            <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center transition-opacity duration-300 opacity-0 hover:opacity-100">
               <h2 className="text-2xl font-semibold">
                 {hoveredCategory?.title}
               </h2>
